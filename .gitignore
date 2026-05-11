@@ -1,0 +1,11 @@
+.venv/
+.cursor/
+.DS_Store
+
+venv
+nominatim.log
+nominatim_cache.sqlite
+test_*.py
+test/
+*.log
+geocode_cache.json
