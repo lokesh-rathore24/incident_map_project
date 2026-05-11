@@ -269,13 +269,10 @@ def main() -> None:
         country = st.text_input("Country", value="India")
         st.info(f"Scope: `{district.strip() or '-'}, {state.strip() or '-'}, {country.strip() or '-'}`")
 
-        st.header("3) Geocoding Engine")
-        secret_api_key = st.secrets.get("GOOGLE_MAPS_API_KEY", "")
-        google_api_key = st.text_input("Google Maps API Key (Optional)", value=secret_api_key, type="password", help="Enter a valid Google Maps API Key to use Google Geocoding instead of Nominatim.")
-        if not google_api_key:
-            st.caption("No Google API key provided. Falling back to OpenStreetMap Nominatim.")
+        # Get Google API Key directly from secrets (no UI)
+        google_api_key = st.secrets.get("GOOGLE_MAPS_API_KEY", "")
 
-        st.header("4) Actions")
+        st.header("3) Actions")
         geocode_now = st.button("Geocode missing addresses", type="primary", use_container_width=True)
         clear_geocode = st.button("Reset session result", use_container_width=True)
         
