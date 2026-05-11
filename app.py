@@ -270,7 +270,8 @@ def main() -> None:
         st.info(f"Scope: `{district.strip() or '-'}, {state.strip() or '-'}, {country.strip() or '-'}`")
 
         st.header("3) Geocoding Engine")
-        google_api_key = st.text_input("Google Maps API Key (Optional)", type="password", help="Enter a valid Google Maps API Key to use Google Geocoding instead of Nominatim.")
+        secret_api_key = st.secrets.get("GOOGLE_MAPS_API_KEY", "")
+        google_api_key = st.text_input("Google Maps API Key (Optional)", value=secret_api_key, type="password", help="Enter a valid Google Maps API Key to use Google Geocoding instead of Nominatim.")
         if not google_api_key:
             st.caption("No Google API key provided. Falling back to OpenStreetMap Nominatim.")
 

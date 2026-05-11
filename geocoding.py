@@ -77,7 +77,11 @@ def clean_location_text(address: str) -> str:
 
 def load_cache(cache_path: Path = CACHE_PATH) -> Dict[str, Dict[str, object]]:
     if not cache_path.exists():
+        # If the cache file does not exist, create an empty JSON file so later code can safely read/write it
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(json.dumps({}), encoding="utf-8")
         return {}
+        
     try:
         with cache_path.open("r", encoding="utf-8") as file:
             data = json.load(file)
