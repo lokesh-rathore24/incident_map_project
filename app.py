@@ -257,12 +257,12 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
 def main() -> None:
     st.set_page_config(page_title="Incident Heatmap", layout="wide")
     st.title("Incident Heatmap")
-    st.caption("Upload complaint data, set location scope, geocode with Nominatim, and inspect incident density.")
+    st.caption("Upload complaint data, set location scope, geocode with Nominatim/Google, and inspect incident density.")
+
+    st.header("1) Upload Data")
+    uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
 
     with st.sidebar:
-        st.header("1) Upload Data")
-        uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
-        
         st.header("2) Geocoding Scope")
         district = st.text_input("District", value="Karnal")
         state = st.text_input("State", value="Haryana")
