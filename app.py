@@ -304,7 +304,7 @@ def main() -> None:
         with col3:
             country = st.text_input("Country", value="India")
         with col4:
-            map_style = st.selectbox("Base Map Style", ["Dark", "Light", "Satellite", "Road"], index=0)
+            map_style = st.selectbox("Base Map Style", ["Light", "Dark", "Satellite", "Road"], index=0)
 
         # Get Google API Key directly from secrets (no UI)
         google_api_key = st.secrets.get("GOOGLE_MAPS_API_KEY", "")
