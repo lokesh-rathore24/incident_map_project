@@ -277,66 +277,125 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     return deck, classes
 
 
+def _init_view_state(view_id: int, available_classes: List[str], default_date_range=None) -> None:
+    """Pre-initialise session-state entries for every widget in a map view.
+
+    Streamlit resets widgets whose ``value`` parameter is supplied alongside a
+    ``key`` whenever the widget tree changes (e.g. a new map view is added and
+    ``st.rerun()`` is called).  By writing defaults into ``session_state``
+    *before* widget creation and **never** passing ``value`` to the widget, we
+    let Streamlit read from its own state store, which survives reruns.
+    """
+    _ss = st.session_state
+
+    # View name
+    name_key = f"name_{view_id}"
+    if name_key not in _ss:
+        _ss[name_key] = f"Map View {view_id}"
+
+    # Show-labels toggle
+    label_key = f"show_labels_{view_id}"
+    if label_key not in _ss:
+        _ss[label_key] = True
+
+    # Date range (tuple of two datetime.date)
+    if default_date_range is not None:
+        date_key = f"date_input_{view_id}"
+        if date_key not in _ss:
+            _ss[date_key] = default_date_range
+
+    # Class-filter state: stored as a plain dict {class_name: bool} so it
+    # is independent of the data_editor's internal delta format.
+    filter_key = f"_filter_state_{view_id}"
+    if filter_key not in _ss:
+        _ss[filter_key] = {c: True for c in available_classes}
+
+
 def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str], map_style: str, datetime_cols: List[str]) -> None:
     with st.container(border=True):
+        # --- Compute date bounds early so we can pre-init state --------
+        date_range_defaults = None
+        if datetime_cols:
+            # Peek at the first datetime col to figure out min/max
+            _tmp = df.copy()
+            _peek_col = st.session_state.get(f"date_col_{view_id}", datetime_cols[0])
+            if _peek_col not in datetime_cols:
+                _peek_col = datetime_cols[0]
+            _tmp[_peek_col] = pd.to_datetime(_tmp[_peek_col], errors="coerce")
+            _min = _tmp[_peek_col].min()
+            _max = _tmp[_peek_col].max()
+            if pd.notna(_min) and pd.notna(_max):
+                date_range_defaults = (_min.date(), _max.date())
+
+        # Pre-initialise ALL widget states before any widget is created
+        _init_view_state(view_id, available_classes, default_date_range=date_range_defaults)
+
+        # --- Title row -------------------------------------------------
         col_title, col_del = st.columns([0.86, 0.14])
         with col_title:
             st.text_input(
-                "View Name", 
-                value=f"Map View {view_id}", 
-                label_visibility="collapsed", 
+                "View Name",
+                label_visibility="collapsed",
                 key=f"name_{view_id}"
             )
         with col_del:
             if st.button("🗑️", key=f"del_{view_id}", help="Delete this map view", use_container_width=True):
                 st.session_state["map_view_ids"].remove(view_id)
                 st.rerun()
-        
+
         view_df = df.copy()
 
+        # --- Date-range filter -----------------------------------------
         if datetime_cols:
             col_date1, col_date2 = st.columns([1, 2])
             with col_date1:
                 date_col = st.selectbox(
-                    "Date Column", 
-                    options=datetime_cols, 
+                    "Date Column",
+                    options=datetime_cols,
                     key=f"date_col_{view_id}",
                     label_visibility="collapsed"
                 )
-            
+
             view_df[date_col] = pd.to_datetime(view_df[date_col], errors="coerce")
             min_date = view_df[date_col].min()
             max_date = view_df[date_col].max()
-            
+
             if pd.notna(min_date) and pd.notna(max_date):
                 min_date_val = min_date.date()
                 max_date_val = max_date.date()
+                date_key = f"date_input_{view_id}"
+
                 with col_date2:
                     selected_dates = st.date_input(
                         "Date Range",
-                        value=(min_date_val, max_date_val),
                         min_value=min_date_val,
                         max_value=max_date_val,
-                        key=f"date_input_{view_id}",
-                        label_visibility="collapsed"
+                        key=date_key,
+                        label_visibility="collapsed",
                     )
-                
+
                 if isinstance(selected_dates, tuple) and len(selected_dates) == 2:
                     start_dt = pd.to_datetime(selected_dates[0])
                     end_dt = pd.to_datetime(selected_dates[1]) + pd.Timedelta(days=1, seconds=-1)
                     view_df = view_df[(view_df[date_col] >= start_dt) & (view_df[date_col] <= end_dt)]
 
+        # --- Class filter & legend -------------------------------------
+        filter_state_key = f"_filter_state_{view_id}"
+        filter_state = st.session_state[filter_state_key]
+
         with st.popover("⚙️ Filter & Legend"):
-            show_labels = st.toggle("Show class labels", value=True, key=f"show_labels_{view_id}")
-            
-            filter_df_initial = pd.DataFrame({
-                "Show": [True] * len(available_classes),
+            show_labels = st.toggle("Show class labels", key=f"show_labels_{view_id}")
+
+            # Build base dataframe from persisted filter state so edits
+            # survive reruns even if data_editor deltas are lost.
+            filter_df = pd.DataFrame({
+                "Show": [filter_state.get(c, True) for c in available_classes],
                 "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
                 "Class": available_classes
             })
 
             edited_filter_df = st.data_editor(
-                filter_df_initial,
+                filter_df,
                 column_config={
                     "Show": st.column_config.CheckboxColumn("Show", default=True),
                     "Icon": st.column_config.ImageColumn("Icon"),
@@ -346,6 +405,11 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                 use_container_width=True,
                 key=f"data_editor_{view_id}"
             )
+
+            # Persist the edited Show values back into our own state dict
+            for _, row in edited_filter_df.iterrows():
+                filter_state[row["Class"]] = row["Show"]
+
             selected_classes = edited_filter_df[edited_filter_df["Show"]]["Class"].tolist()
 
         if selected_classes:
@@ -361,7 +425,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
         metrics[0].metric("Total Records", total_count)
         metrics[1].metric("Geocoded Records", geocoded_count)
         metrics[2].metric("Unresolved Records", failed_count)
-        
+
         reset_count = st.session_state.get(f"reset_count_{view_id}", 0)
         map_data = build_map(view_df, show_labels=show_labels, map_style=map_style)
         if map_data:
