@@ -275,6 +275,99 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     return deck, classes
 
 
+def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str], map_style: str, datetime_cols: List[str]) -> None:
+    with st.container(border=True):
+        col_title, col_del = st.columns([0.85, 0.15])
+        with col_title:
+            st.text_input(
+                "View Name", 
+                value=f"Map View {view_id}", 
+                label_visibility="collapsed", 
+                key=f"name_{view_id}"
+            )
+        with col_del:
+            if st.button("🗑️", key=f"del_{view_id}", help="Delete View", use_container_width=True):
+                st.session_state["map_view_ids"].remove(view_id)
+                st.rerun()
+        
+        view_df = df.copy()
+
+        if datetime_cols:
+            col_date1, col_date2 = st.columns([1, 2])
+            with col_date1:
+                date_col = st.selectbox(
+                    "Date Column", 
+                    options=datetime_cols, 
+                    key=f"date_col_{view_id}",
+                    label_visibility="collapsed"
+                )
+            
+            view_df[date_col] = pd.to_datetime(view_df[date_col], errors="coerce")
+            min_date = view_df[date_col].min()
+            max_date = view_df[date_col].max()
+            
+            if pd.notna(min_date) and pd.notna(max_date):
+                min_date_val = min_date.date()
+                max_date_val = max_date.date()
+                with col_date2:
+                    selected_dates = st.date_input(
+                        "Date Range",
+                        value=(min_date_val, max_date_val),
+                        min_value=min_date_val,
+                        max_value=max_date_val,
+                        key=f"date_input_{view_id}",
+                        label_visibility="collapsed"
+                    )
+                
+                if isinstance(selected_dates, tuple) and len(selected_dates) == 2:
+                    start_dt = pd.to_datetime(selected_dates[0])
+                    end_dt = pd.to_datetime(selected_dates[1]) + pd.Timedelta(days=1, seconds=-1)
+                    view_df = view_df[(view_df[date_col] >= start_dt) & (view_df[date_col] <= end_dt)]
+
+        with st.popover("⚙️ Filter & Legend"):
+            show_labels = st.toggle("Show class labels", value=True, key=f"show_labels_{view_id}")
+            
+            filter_df_initial = pd.DataFrame({
+                "Show": [True] * len(available_classes),
+                "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
+                "Class": available_classes
+            })
+
+            edited_filter_df = st.data_editor(
+                filter_df_initial,
+                column_config={
+                    "Show": st.column_config.CheckboxColumn("Show", default=True),
+                    "Icon": st.column_config.ImageColumn("Icon"),
+                    "Class": st.column_config.TextColumn("Class", disabled=True),
+                },
+                hide_index=True,
+                use_container_width=True,
+                key=f"data_editor_{view_id}"
+            )
+            selected_classes = edited_filter_df[edited_filter_df["Show"]]["Class"].tolist()
+
+        if selected_classes:
+            view_df = view_df[view_df["Class of Incident"].astype(str).isin(selected_classes)]
+        else:
+            view_df = view_df.iloc[0:0]
+
+        total_count = len(view_df)
+        geocoded_count = int(view_df["latitude"].notna().sum()) if "latitude" in view_df.columns else 0
+        failed_count = total_count - geocoded_count
+
+        metrics = st.columns(3)
+        metrics[0].metric("Total Records", total_count)
+        metrics[1].metric("Geocoded Records", geocoded_count)
+        metrics[2].metric("Unresolved Records", failed_count)
+        
+        map_data = build_map(view_df, show_labels=show_labels, map_style=map_style)
+        if map_data:
+            deck, _ = map_data
+            st.pydeck_chart(deck, use_container_width=True)
+        else:
+            st.warning("No valid coordinates found to render map.")
+
+
 def main() -> None:
     st.set_page_config(page_title="Incident Heatmap", layout="wide")
     st.title("Incident Heatmap")
@@ -366,50 +459,46 @@ def main() -> None:
     full_df = st.session_state["geocoded_df"]
     available_classes = sorted(full_df["Class of Incident"].dropna().astype(str).unique().tolist())
 
+    # Identify potential datetime columns for view-level filtering
+    datetime_cols = []
+    for col in result_df.columns:
+        if pd.api.types.is_datetime64_any_dtype(result_df[col]):
+            datetime_cols.append(col)
+        elif result_df[col].dtype == object:
+            if any(x in col.lower() for x in ["date", "time", "timestamp"]):
+                try:
+                    sample = result_df[col].dropna().head(10)
+                    if not sample.empty:
+                        pd.to_datetime(sample, errors="raise")
+                        datetime_cols.append(col)
+                except:
+                    pass
+
     st.markdown("---")
 
-    with st.popover("⚙️ Filter & Legend"):
-        show_labels = st.toggle("Show class labels", value=True)
-        
-        filter_df_initial = pd.DataFrame({
-            "Show": [True] * len(available_classes),
-            "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
-            "Class": available_classes
-        })
+    if "map_view_ids" not in st.session_state:
+        st.session_state["map_view_ids"] = [1]
+    if "next_view_id" not in st.session_state:
+        st.session_state["next_view_id"] = 2
 
-        edited_filter_df = st.data_editor(
-            filter_df_initial,
-            column_config={
-                "Show": st.column_config.CheckboxColumn("Show", default=True),
-                "Icon": st.column_config.ImageColumn("Icon"),
-                "Class": st.column_config.TextColumn("Class", disabled=True),
-            },
-            hide_index=True,
-            use_container_width=True,
-        )
-        selected_classes = edited_filter_df[edited_filter_df["Show"]]["Class"].tolist()
+    st.markdown("<br>", unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        if st.button("✨ Add New Map View", type="primary", use_container_width=True):
+            st.session_state["map_view_ids"].append(st.session_state["next_view_id"])
+            st.session_state["next_view_id"] += 1
+            st.rerun()
+    st.markdown("<br>", unsafe_allow_html=True)
 
-    if selected_classes:
-        result_df = result_df[result_df["Class of Incident"].astype(str).isin(selected_classes)]
-    else:
-        result_df = result_df.iloc[0:0]
-
-    total_count = len(result_df)
-    geocoded_count = int(result_df["latitude"].notna().sum()) if "latitude" in result_df.columns else 0
-    failed_count = total_count - geocoded_count
-
-    metrics = st.columns(3)
-    metrics[0].metric("Total Records", total_count)
-    metrics[1].metric("Geocoded Records", geocoded_count)
-    metrics[2].metric("Unresolved Records", failed_count)
+    view_ids = st.session_state["map_view_ids"]
     
-    map_data = build_map(result_df, show_labels=show_labels, map_style=map_style)
-    if map_data:
-        deck, _ = map_data
-        st.pydeck_chart(deck, use_container_width=True)
-    else:
-        st.warning("No valid coordinates found to render map.")
-
+    for i in range(0, len(view_ids), 2):
+        cols = st.columns(2)
+        with cols[0]:
+            render_map_view(view_ids[i], result_df, available_classes, map_style, datetime_cols)
+        if i + 1 < len(view_ids):
+            with cols[1]:
+                render_map_view(view_ids[i+1], result_df, available_classes, map_style, datetime_cols)
 
     unresolved = result_df[result_df["latitude"].isna() | result_df["longitude"].isna()]
     diagnostics = st.session_state.get("geocode_diagnostics", {})
@@ -428,7 +517,7 @@ def main() -> None:
         )
 
     st.markdown("---")
-    st.markdown("### Filtered Data View")
+    st.markdown("### Full Data View")
     st.dataframe(result_df, use_container_width=True, hide_index=True)
 
 
