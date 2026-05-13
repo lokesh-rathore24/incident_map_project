@@ -378,7 +378,18 @@ def main() -> None:
     st.title("CrimeLens")
     st.caption("Upload complaint data, set location scope, geocode with Nominatim/Google, and inspect incident density.")
 
-    st.subheader("📂 Data Upload")
+    col_h, col_pop = st.columns([0.95, 0.05])
+    with col_h:
+        st.subheader("📂 Data Upload")
+    with col_pop:
+        with st.popover("ℹ️"):
+            st.markdown("**How to use this app:**")
+            st.markdown("1. **Upload** an `.xlsx` file containing incident data.")
+            st.markdown("2. **Ensure** it has `Complainent Address` and `Class of Incident` columns. A `Date` column is also recommended.")
+            st.markdown("3. **Geocode:** Set your scope and click *Geocode missing addresses* to resolve locations.")
+            st.markdown("4. **Multiple Views:** Click *✨ Add New Map View* at the bottom to compare different maps side-by-side.")
+            st.markdown("5. **Customize:** Click the Map View title to rename it. Use the *⚙️ Filter & Legend* to show/hide specific incident types.")
+            st.markdown("6. **Time Travel:** Select a Date Range just below the Map Name to filter incidents by time for that specific view.")
 
     col_upload, col_sample = st.columns([3, 1])
     with col_upload:
