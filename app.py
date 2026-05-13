@@ -3,6 +3,8 @@ from typing import Optional
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+import io
+
 import pandas as pd
 import pydeck as pdk
 import requests
@@ -277,7 +279,7 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
 
 def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str], map_style: str, datetime_cols: List[str]) -> None:
     with st.container(border=True):
-        col_title, col_del = st.columns([0.85, 0.15])
+        col_title, col_del = st.columns([0.86, 0.14])
         with col_title:
             st.text_input(
                 "View Name", 
@@ -286,7 +288,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                 key=f"name_{view_id}"
             )
         with col_del:
-            if st.button("🗑️", key=f"del_{view_id}", help="Delete View", use_container_width=True):
+            if st.button("🗑️", key=f"del_{view_id}", help="Delete this map view", use_container_width=True):
                 st.session_state["map_view_ids"].remove(view_id)
                 st.rerun()
         
@@ -360,10 +362,13 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
         metrics[1].metric("Geocoded Records", geocoded_count)
         metrics[2].metric("Unresolved Records", failed_count)
         
+        reset_count = st.session_state.get(f"reset_count_{view_id}", 0)
         map_data = build_map(view_df, show_labels=show_labels, map_style=map_style)
         if map_data:
             deck, _ = map_data
-            st.pydeck_chart(deck, use_container_width=True)
+            # Changing the key forces Streamlit to fully remount the PyDeck component,
+            # which re-applies initial_view_state (zoom + position reset)
+            st.pydeck_chart(deck, use_container_width=True, key=f"map_{view_id}_{reset_count}")
         else:
             st.warning("No valid coordinates found to render map.")
 
@@ -373,20 +378,32 @@ def main() -> None:
     st.title("CrimeLens")
     st.caption("Upload complaint data, set location scope, geocode with Nominatim/Google, and inspect incident density.")
 
-    col_h, col_pop = st.columns([0.95, 0.05])
-    with col_h:
-        st.subheader("📂 Data Upload")
-    with col_pop:
-        with st.popover("ℹ️"):
-            st.markdown("**How to use this app:**")
-            st.markdown("1. **Upload** an `.xlsx` file containing incident data.")
-            st.markdown("2. **Ensure** it has `Complainent Address` and `Class of Incident` columns. A `Date` column is also recommended.")
-            st.markdown("3. **Geocode:** Set your scope and click *Geocode missing addresses* to resolve locations.")
-            st.markdown("4. **Multiple Views:** Click *✨ Add New Map View* at the bottom to compare different maps side-by-side.")
-            st.markdown("5. **Customize:** Click the Map View title to rename it. Use the *⚙️ Filter & Legend* to show/hide specific incident types.")
-            st.markdown("6. **Time Travel:** Select a Date Range just below the Map Name to filter incidents by time for that specific view.")
+    st.subheader("📂 Data Upload")
 
-    uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
+    col_upload, col_sample = st.columns([3, 1])
+    with col_upload:
+        uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
+    with col_sample:
+        sample_columns = [
+            "Sr.No",
+            "Date of Submission",
+            "Class of Incident",
+            "Complainent Address",
+            "Complaint Description",
+        ]
+        sample_df = pd.DataFrame(columns=sample_columns)
+        buf = io.BytesIO()
+        sample_df.to_excel(buf, index=False)
+        buf.seek(0)
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.download_button(
+            label="⬇️ Download Sample Format",
+            data=buf,
+            file_name="crimelens_sample.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            use_container_width=True,
+            help="Download a blank Excel template with all required columns."
+        )
 
     with st.container(border=True):
         st.subheader("⚙️ Configuration & Actions")
