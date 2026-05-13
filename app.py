@@ -1,7 +1,7 @@
 from __future__ import annotations
-
+from typing import Optional
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import pydeck as pdk
@@ -14,40 +14,34 @@ from geocoding import geocode_address, geocode_google_address, load_cache, norma
 REQUIRED_COLUMNS = ["Complainent Address", "Class of Incident"]
 LOG_PATH = Path("nominatim.log")
 
+ICON_MAPPING = {
+    "Cyber Crime (other than financial fraud)": "https://img.icons8.com/color/48/000000/cyber-security.png",
+    "Cyber Financial Fraud": "https://img.icons8.com/color/48/000000/bank-cards.png",
+    "Other IPC/BNS Crimes": "https://img.icons8.com/color/48/000000/handcuffs.png",
+    "Miscellaneous": "https://img.icons8.com/color/48/000000/box-important--v1.png",
+    "Crime Against SC/ST": "https://img.icons8.com/color/48/000000/scales.png",
+    "Crime against Children": "https://img.icons8.com/color/48/000000/children.png",
+    "Matrimonial Dispute": "https://img.icons8.com/color/48/000000/wedding-rings.png",
+    "Illegal Immigration": "https://img.icons8.com/color/48/000000/passport.png",
+    "Job Related Fraud": "https://img.icons8.com/color/48/000000/briefcase.png",
+    "Property/Land Dispute": "https://img.icons8.com/color/48/000000/home.png",
+    "Other Economic Offence": "https://img.icons8.com/color/48/000000/money-bag.png",
+    "Noise Pollution": "https://img.icons8.com/color/48/000000/speaker.png",
+    "Runaway Couples": "https://img.icons8.com/color/48/000000/running.png",
+    "Security Threat": "https://img.icons8.com/color/48/000000/warning-shield.png",
+    "Minor Accident": "https://img.icons8.com/color/48/000000/car-crash.png",
+    "Crime Against Women": "https://img.icons8.com/color/48/000000/female.png",
+    "Corruption/Demand of Bribe": "https://img.icons8.com/color/48/000000/cash.png",
+    "Lost Property": "https://img.icons8.com/color/48/000000/lost-and-found.png",
+    "Hurt": "https://img.icons8.com/color/48/000000/bandage.png",
+    "Intimidation": "https://img.icons8.com/color/48/000000/angry.png",
+}
+DEFAULT_ICON = "https://img.icons8.com/color/48/000000/marker.png"
+
 
 def ensure_required_columns(dataframe: pd.DataFrame) -> Tuple[bool, List[str]]:
     missing = [column for column in REQUIRED_COLUMNS if column not in dataframe.columns]
     return (len(missing) == 0, missing)
-
-
-def class_color_palette(classes: List[str]) -> Dict[str, List[int]]:
-    palette = [
-        [230, 25, 75],    # Red
-        [60, 180, 75],    # Green
-        [255, 225, 25],   # Yellow
-        [0, 130, 200],    # Blue
-        [245, 130, 48],   # Orange
-        [145, 30, 180],   # Purple
-        [70, 240, 240],   # Cyan
-        [240, 50, 230],   # Magenta
-        [210, 245, 60],   # Lime
-        [250, 190, 212],  # Pink
-        [0, 128, 128],    # Teal
-        [220, 190, 255],  # Lavender
-        [170, 110, 40],   # Brown
-        [255, 250, 200],  # Beige
-        [128, 0, 0],      # Maroon
-        [170, 255, 195],  # Mint
-        [128, 128, 0],    # Olive
-        [255, 215, 180],  # Apricot
-        [0, 0, 128],      # Navy
-        [128, 128, 128],  # Grey
-    ]
-    mapping: Dict[str, List[int]] = {}
-    for idx, class_name in enumerate(classes):
-        mapping[class_name] = palette[idx % len(palette)]
-    return mapping
-
 
 def geocode_dataframe(
     dataframe: pd.DataFrame,
@@ -165,14 +159,23 @@ def geocode_dataframe(
     return output, geocoded_rows, diagnostics
 
 
-def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Optional[Tuple[pdk.Deck, List[str], Dict[str, List[int]]]]:
+def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Optional[Tuple[pdk.Deck, List[str]]]:
     valid_points = dataframe.dropna(subset=["latitude", "longitude"]).copy()
     if valid_points.empty:
         return None
 
     classes = sorted(valid_points["Class of Incident"].dropna().astype(str).unique().tolist())
-    color_map = class_color_palette(classes)
-    valid_points["color"] = valid_points["Class of Incident"].astype(str).map(color_map)
+    
+    def get_icon_data(class_name: str) -> dict:
+        url = ICON_MAPPING.get(class_name, DEFAULT_ICON)
+        return {
+            "url": url,
+            "width": 128,
+            "height": 128,
+            "anchorY": 128
+        }
+        
+    valid_points["icon_data"] = valid_points["Class of Incident"].astype(str).map(get_icon_data)
 
     # Aggregate counts by latitude and longitude to show on the map
     coords_count = valid_points.groupby(["latitude", "longitude"]).size().reset_index(name="case_count")
@@ -194,17 +197,14 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
         aggregation="SUM",
         radiusPixels=20,
     )
-    scatter_layer = pdk.Layer(
-        "ScatterplotLayer",
+    icon_layer = pdk.Layer(
+        "IconLayer",
         data=valid_points,
+        get_icon="icon_data",
+        get_size=4,
+        size_scale=10,
         get_position="[longitude, latitude]",
-        get_fill_color="color",
-        get_radius=150,
         pickable=True,
-        opacity=0.7,
-        stroked=True,
-        get_line_color=[255, 255, 255],
-        line_width_min_pixels=1,
     )
     text_layer = pdk.Layer(
         "TextLayer",
@@ -234,7 +234,7 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     )
 
     view_state = pdk.ViewState(latitude=center_lat, longitude=center_lon, zoom=zoom, pitch=0, bearing=0)
-    layers = [heatmap_layer, scatter_layer, count_layer]
+    layers = [heatmap_layer, icon_layer, count_layer]
     if show_labels:
         layers.append(text_layer)
     pydeck_style = "dark"
@@ -248,10 +248,10 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     deck = pdk.Deck(
         layers=layers,
         initial_view_state=view_state,
-        tooltip={"text": "Class: {Class of Incident}\nLocation: {Complainent Address}"},
+        tooltip={"text": "Class: {Class of Incident}\nLocation: {Complainent Address}\nIncidents at this location: {case_count}"},
         map_style=pydeck_style,
     )
-    return deck, classes, color_map
+    return deck, classes
 
 
 def main() -> None:
@@ -262,22 +262,28 @@ def main() -> None:
     st.header("1) Upload Data")
     uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
 
-    with st.sidebar:
-        st.header("2) Geocoding Scope")
-        district = st.text_input("District", value="Karnal")
-        state = st.text_input("State", value="Haryana")
-        country = st.text_input("Country", value="India")
-        st.info(f"Scope: `{district.strip() or '-'}, {state.strip() or '-'}, {country.strip() or '-'}`")
+    with st.container(border=True):
+        st.subheader("⚙️ Configuration & Actions")
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            district = st.text_input("District", value="Karnal")
+        with col2:
+            state = st.text_input("State", value="Haryana")
+        with col3:
+            country = st.text_input("Country", value="India")
+        with col4:
+            map_style = st.selectbox("Base Map Style", ["Dark", "Light", "Satellite", "Road"], index=0)
 
         # Get Google API Key directly from secrets (no UI)
         google_api_key = st.secrets.get("GOOGLE_MAPS_API_KEY", "")
 
-        st.header("3) Actions")
-        geocode_now = st.button("Geocode missing addresses", type="primary", use_container_width=True)
-        clear_geocode = st.button("Reset session result", use_container_width=True)
-        
-        st.header("Map Controls")
-        map_style = st.selectbox("Base Map Style", ["Dark", "Light", "Satellite", "Road"], index=0)
+        col_btn1, col_btn2, col_info = st.columns([1, 1, 2])
+        with col_btn1:
+            geocode_now = st.button("Geocode missing addresses", type="primary", use_container_width=True)
+        with col_btn2:
+            clear_geocode = st.button("Reset session result", use_container_width=True)
+        with col_info:
+            st.info(f"Scope: `{district.strip() or '-'}, {state.strip() or '-'}, {country.strip() or '-'}`")
 
     if uploaded_file is None:
         st.info("Upload an `.xlsx` file to begin.")
@@ -308,7 +314,7 @@ def main() -> None:
 
     if clear_geocode:
         st.session_state["geocoded_df"] = None
-        st.sidebar.success("Session geocoded result cleared.")
+        st.success("Session geocoded result cleared.")
 
     if geocode_now or st.session_state["geocoded_df"] is None:
         with st.spinner("Geocoding addresses (with cache)..."):
@@ -325,18 +331,31 @@ def main() -> None:
 
     result_df = st.session_state["geocoded_df"].copy()
 
-    filter_col1, filter_col2 = st.columns([3, 1])
-    with filter_col1:
-        available_classes = sorted(result_df["Class of Incident"].dropna().astype(str).unique().tolist())
-        selected_classes = st.multiselect(
-            "Filter by Class of Incident",
-            available_classes,
-            default=available_classes,
+    full_df = st.session_state["geocoded_df"]
+    available_classes = sorted(full_df["Class of Incident"].dropna().astype(str).unique().tolist())
+
+    st.markdown("---")
+
+    with st.popover("⚙️ Filter & Legend"):
+        show_labels = st.toggle("Show class labels", value=True)
+        
+        filter_df_initial = pd.DataFrame({
+            "Show": [True] * len(available_classes),
+            "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
+            "Class": available_classes
+        })
+
+        edited_filter_df = st.data_editor(
+            filter_df_initial,
+            column_config={
+                "Show": st.column_config.CheckboxColumn("Show", default=True),
+                "Icon": st.column_config.ImageColumn("Icon"),
+                "Class": st.column_config.TextColumn("Class", disabled=True),
+            },
+            hide_index=True,
+            use_container_width=True,
         )
-    with filter_col2:
-        st.write("") # padding
-        st.write("")
-        show_labels = st.toggle("Show class labels on map", value=True)
+        selected_classes = edited_filter_df[edited_filter_df["Show"]]["Class"].tolist()
 
     if selected_classes:
         result_df = result_df[result_df["Class of Incident"].astype(str).isin(selected_classes)]
@@ -347,26 +366,15 @@ def main() -> None:
     geocoded_count = int(result_df["latitude"].notna().sum()) if "latitude" in result_df.columns else 0
     failed_count = total_count - geocoded_count
 
-    st.markdown("---")
     metrics = st.columns(3)
     metrics[0].metric("Total Records", total_count)
     metrics[1].metric("Geocoded Records", geocoded_count)
     metrics[2].metric("Unresolved Records", failed_count)
-    st.markdown("---")
-
-    map_col, legend_col = st.columns([4, 1])
-    map_data = build_map(result_df, show_labels=show_labels, map_style=map_style)
     
+    map_data = build_map(result_df, show_labels=show_labels, map_style=map_style)
     if map_data:
-        deck, classes, color_map = map_data
-        with map_col:
-            st.pydeck_chart(deck, use_container_width=True)
-        with legend_col:
-            st.markdown("#### Legend")
-            for c in classes:
-                r, g, b = color_map[c]
-                swatch = f"<div style='width: 16px; height: 16px; background-color: rgb({r},{g},{b}); border-radius: 4px; margin-right: 8px; flex-shrink: 0;'></div>"
-                st.markdown(f"<div style='display: flex; align-items: center; margin-bottom: 8px;'>{swatch}<span style='font-size: 14px; line-height: 1.2;'>{c}</span></div>", unsafe_allow_html=True)
+        deck, _ = map_data
+        st.pydeck_chart(deck, use_container_width=True)
     else:
         st.warning("No valid coordinates found to render map.")
 
