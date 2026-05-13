@@ -259,7 +259,18 @@ def main() -> None:
     st.title("Incident Heatmap")
     st.caption("Upload complaint data, set location scope, geocode with Nominatim/Google, and inspect incident density.")
 
-    st.header("1) Upload Data")
+    col_h, col_pop = st.columns([0.95, 0.05])
+    with col_h:
+        st.subheader("📂 Data Upload")
+    with col_pop:
+        with st.popover("ℹ️"):
+            st.markdown("**How to use this app:**")
+            st.markdown("1. **Upload** an `.xlsx` file containing incident data.")
+            st.markdown("2. **Ensure** it has `Complainent Address` and `Class of Incident` columns.")
+            st.markdown("3. **After upload**, the data will be validated. Then, you can **set** your geocoding scope below.")
+            st.markdown("4. **Click** *Geocode missing addresses* to resolve locations and plot them on the map.")
+            st.markdown("5. **Use** the *⚙️ Filter & Legend* to show/hide specific incident types and toggle labels.")
+
     uploaded_file = st.file_uploader("Upload complaint Excel file", type=["xlsx"])
 
     with st.container(border=True):
