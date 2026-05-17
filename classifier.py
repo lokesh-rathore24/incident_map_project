@@ -40,7 +40,7 @@ def _norm_desc(text: str) -> str:
     """Normalise a description for cache-key purposes."""
     return " ".join(text.lower().split())
 
-# The 20 valid categories – must stay in sync with ICON_MAPPING in app.py.
+# The 20 valid categories – must stay in sync with EMOJI_MAPPING in app.py.
 VALID_CATEGORIES: List[str] = [
     "Cyber Crime (other than financial fraud)",
     "Cyber Financial Fraud",
@@ -91,6 +91,7 @@ def _build_prompt(descriptions: List[str]) -> str:
 
 Given the following complaint descriptions, classify each one into EXACTLY one of these categories:
 {category_list}
+Everything related to marpeet, ladai , jagda . fighting should be classified as "Hurt".
 
 Rules:
 - Return ONLY a valid JSON array of strings, one category per description, in the same order.

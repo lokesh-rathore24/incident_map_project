@@ -3,7 +3,9 @@ from typing import Optional
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+import base64
 import hashlib
+import inspect
 import io
 
 import pandas as pd
@@ -18,10 +20,7 @@ from geocoding import geocode_address, geocode_google_address, load_cache, norma
 REQUIRED_COLUMNS = ["Complainent Address", "Class of Incident"]
 LOG_PATH = Path("nominatim.log")
 
-import base64
-
 ICONS_DIR = Path("police_icons")
-
 ICON_FILES = {
     "Cyber Crime (other than financial fraud)": "01_cyber_crime.png",
     "Cyber Financial Fraud": "02_cyber_financial_fraud.png",
@@ -45,8 +44,11 @@ ICON_FILES = {
     "Intimidation": "20_intimidation.png",
 }
 
+DEFAULT_MARKER_ICON = "https://img.icons8.com/fluency/48/000000/marker.png"
+
+
 def load_local_icons() -> Dict[str, str]:
-    mapping = {}
+    mapping: Dict[str, str] = {}
     for category, filename in ICON_FILES.items():
         file_path = ICONS_DIR / filename
         if file_path.exists():
@@ -54,13 +56,35 @@ def load_local_icons() -> Dict[str, str]:
                 encoded = base64.b64encode(file_path.read_bytes()).decode("utf-8")
                 mapping[category] = f"data:image/png;base64,{encoded}"
             except Exception:
-                mapping[category] = "https://img.icons8.com/color/48/000000/marker.png"
+                mapping[category] = DEFAULT_MARKER_ICON
         else:
-            mapping[category] = "https://img.icons8.com/color/48/000000/marker.png"
+            mapping[category] = DEFAULT_MARKER_ICON
     return mapping
 
 ICON_MAPPING = load_local_icons()
-DEFAULT_ICON = ICON_MAPPING.get("Miscellaneous", "https://img.icons8.com/color/48/000000/marker.png")
+
+CATEGORY_COLOR_MAPPING: Dict[str, List[int]] = {
+    "Cyber Crime (other than financial fraud)": [35, 122, 255, 180],
+    "Cyber Financial Fraud": [123, 31, 162, 180],
+    "Other IPC/BNS Crimes": [255, 153, 51, 180],
+    "Miscellaneous": [96, 125, 139, 180],
+    "Crime Against SC/ST": [244, 67, 54, 180],
+    "Crime against Children": [255, 193, 7, 180],
+    "Matrimonial Dispute": [233, 30, 99, 180],
+    "Illegal Immigration": [0, 150, 136, 180],
+    "Job Related Fraud": [121, 85, 72, 180],
+    "Property/Land Dispute": [76, 175, 80, 180],
+    "Other Economic Offence": [255, 87, 34, 180],
+    "Noise Pollution": [63, 81, 181, 180],
+    "Runaway Couples": [156, 39, 176, 180],
+    "Security Threat": [244, 67, 54, 180],
+    "Minor Accident": [255, 235, 59, 180],
+    "Crime Against Women": [233, 30, 99, 180],
+    "Corruption/Demand of Bribe": [255, 152, 0, 180],
+    "Lost Property": [121, 85, 72, 180],
+    "Hurt": [244, 67, 54, 180],
+    "Intimidation": [63, 81, 181, 180],
+}
 
 
 def ensure_required_columns(dataframe: pd.DataFrame) -> Tuple[bool, List[str]]:
@@ -203,21 +227,20 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     )
     agg_points = agg_points.rename(columns={"Complainent_Address": "Complainent Address"})
     agg_points["case_count_str"] = agg_points["case_count"].astype(str)
-
-    def get_icon_data(class_name: str) -> dict:
-        url = ICON_MAPPING.get(class_name, DEFAULT_ICON)
-        return {
-            "url": url,
-            "width": 128,
-            "height": 128,
-            "anchorY": 128,
-        }
-
-    agg_points["icon_data"] = agg_points["Class of Incident"].astype(str).map(get_icon_data)
-    agg_points["icon_size"] = 3 + agg_points["case_count"].apply(lambda c: min((c - 1) * 0.1, 1.5))
-    agg_points["elevation"] = agg_points["case_count"] * 30
+    agg_points["fill_color"] = agg_points["Class of Incident"].astype(str).map(
+        lambda class_name: CATEGORY_COLOR_MAPPING.get(class_name, [96, 125, 139, 180])
+    )
+    agg_points["elevation"] = agg_points["case_count"] * 40
     agg_points["count_color"] = agg_points["case_count"].apply(
         lambda c: [255, 50, 50, 255] if c >= 3 else [255, 255, 255, 255]
+    )
+    agg_points["icon_data"] = agg_points["Class of Incident"].astype(str).map(
+        lambda class_name: {
+            "url": ICON_MAPPING.get(class_name, DEFAULT_MARKER_ICON),
+            "width": 64,
+            "height": 64,
+            "anchorY": 64,
+        }
     )
 
     center_lat = 29.6857
@@ -229,10 +252,11 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
         data=agg_points,
         get_position="[longitude, latitude]",
         get_elevation="elevation",
-        radius=60,
-        get_fill_color="[255, 50, 50, 150]",
+        radius=30,
+        get_fill_color="fill_color",
         pickable=True,
         extruded=True,
+        opacity=0.8,
     )
 
     heatmap_layer = pdk.Layer(
@@ -248,16 +272,16 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
         "IconLayer",
         data=agg_points,
         get_icon="icon_data",
-        get_size="icon_size",
-        size_scale=10,
-        get_position="[longitude, latitude, elevation]",
-        pickable=True,
+        get_size=24,
+        size_scale=1.5,
+        get_position="[longitude, latitude, elevation + 45]",
+        pickable=False,
     )
 
     text_layer = pdk.Layer(
         "TextLayer",
         data=agg_points,
-        get_position="[longitude, latitude, elevation]",
+        get_position="[longitude, latitude, elevation + 55]",
         get_text="Class of Incident",
         get_size=12,
         get_color=[20, 20, 20, 220],
@@ -271,13 +295,13 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     count_layer = pdk.Layer(
         "TextLayer",
         data=agg_points,
-        get_position="[longitude, latitude, elevation]",
+        get_position="[longitude, latitude, elevation + 22]",
         get_text="case_count_str",
         get_size=18,
         get_color="count_color",
         get_alignment_baseline="'center'",
         get_text_anchor="'middle'",
-        font_weight="bold",
+        font_weight="'bold'",
         pickable=False,
     )
 
@@ -301,6 +325,16 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
         map_style=pydeck_style,
     )
     return deck, classes
+
+
+def _render_pydeck_chart(deck: pdk.Deck, key: Optional[str] = None):
+    signature = inspect.signature(st.pydeck_chart)
+    params = signature.parameters
+    if "use_container_width" in params:
+        return st.pydeck_chart(deck, use_container_width=True, key=key)
+    if "width" in params:
+        return st.pydeck_chart(deck, width="stretch", key=key)
+    return st.pydeck_chart(deck, key=key)
 
 
 def _init_view_state(view_id: int, available_classes: List[str], default_date_range=None) -> None:
@@ -416,7 +450,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
             # survive reruns even if data_editor deltas are lost.
             filter_df = pd.DataFrame({
                 "Show": [filter_state.get(c, True) for c in available_classes],
-                "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
+                "Icon": [ICON_MAPPING.get(c, DEFAULT_MARKER_ICON) for c in available_classes],
                 "Class": available_classes
             })
             filter_df["Show"] = filter_df["Show"].astype(bool)
@@ -460,7 +494,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                 deck, _ = map_data
                 # Changing the key forces Streamlit to fully remount the PyDeck component,
                 # which re-applies initial_view_state (zoom + position reset)
-                st.pydeck_chart(deck, use_container_width=True, key=f"map_{view_id}_{reset_count}")
+                _render_pydeck_chart(deck, key=f"map_{view_id}_{reset_count}")
             else:
                 st.warning("No valid coordinates found to render map.")
 
