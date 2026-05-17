@@ -183,49 +183,50 @@ def geocode_dataframe(
     return output, geocoded_rows, diagnostics
 
 
+@st.cache_data
 def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Optional[Tuple[pdk.Deck, List[str]]]:
     valid_points = dataframe.dropna(subset=["latitude", "longitude"]).copy()
     if valid_points.empty:
         return None
 
     classes = sorted(valid_points["Class of Incident"].dropna().astype(str).unique().tolist())
-    
+
+    # Aggregate by location and incident class to avoid rendering duplicate markers
+    # for multiple records at the exact same lat/lon.
+    agg_points = (
+        valid_points
+        .groupby(["latitude", "longitude", "Class of Incident"], as_index=False)
+        .agg(
+            case_count=("Class of Incident", "size"),
+            Complainent_Address=("Complainent Address", "first"),
+        )
+    )
+    agg_points = agg_points.rename(columns={"Complainent_Address": "Complainent Address"})
+    agg_points["case_count_str"] = agg_points["case_count"].astype(str)
+
     def get_icon_data(class_name: str) -> dict:
         url = ICON_MAPPING.get(class_name, DEFAULT_ICON)
         return {
             "url": url,
             "width": 128,
             "height": 128,
-            "anchorY": 128
+            "anchorY": 128,
         }
-        
-    valid_points["icon_data"] = valid_points["Class of Incident"].astype(str).map(get_icon_data)
 
-    # Aggregate counts by latitude and longitude to show on the map
-    coords_count = valid_points.groupby(["latitude", "longitude"]).size().reset_index(name="case_count")
-    coords_count["case_count_str"] = coords_count["case_count"].astype(str)
-    
-    # Merge count back into valid_points so scatter radius and tooltip can use it
-    valid_points = valid_points.merge(coords_count, on=["latitude", "longitude"])
-    
-    # Calculate dynamic properties for high-incident highlighting
-    # Cap the max icon size growth to prevent gigantic icons
-    valid_points["icon_size"] = 3 + valid_points["case_count"].apply(lambda c: min((c - 1) * 0.1, 1.5))
-    valid_points["elevation"] = valid_points["case_count"] * 30  # 30 meters per case
-    valid_points["count_color"] = valid_points["case_count"].apply(lambda c: [255, 50, 50, 255] if c >= 3 else [255, 255, 255, 255])
-    
-    # Apply to coords_count as well for count text layer
-    coords_count["elevation"] = coords_count["case_count"] * 30
-    coords_count["count_color"] = coords_count["case_count"].apply(lambda c: [255, 50, 50, 255] if c >= 3 else [255, 255, 255, 255])
+    agg_points["icon_data"] = agg_points["Class of Incident"].astype(str).map(get_icon_data)
+    agg_points["icon_size"] = 3 + agg_points["case_count"].apply(lambda c: min((c - 1) * 0.1, 1.5))
+    agg_points["elevation"] = agg_points["case_count"] * 30
+    agg_points["count_color"] = agg_points["case_count"].apply(
+        lambda c: [255, 50, 50, 255] if c >= 3 else [255, 255, 255, 255]
+    )
 
-    # Locked to Karnal district and 3D view
     center_lat = 29.6857
     center_lon = 76.9905
     zoom = 10.5
 
     column_layer = pdk.Layer(
         "ColumnLayer",
-        data=valid_points,
+        data=agg_points,
         get_position="[longitude, latitude]",
         get_elevation="elevation",
         radius=60,
@@ -236,24 +237,26 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
 
     heatmap_layer = pdk.Layer(
         "HeatmapLayer",
-        data=valid_points,
+        data=agg_points,
         get_position="[longitude, latitude]",
-        get_weight=1,
+        get_weight="case_count",
         aggregation="SUM",
         radiusPixels=20,
     )
+
     icon_layer = pdk.Layer(
         "IconLayer",
-        data=valid_points,
+        data=agg_points,
         get_icon="icon_data",
         get_size="icon_size",
         size_scale=10,
         get_position="[longitude, latitude, elevation]",
         pickable=True,
     )
+
     text_layer = pdk.Layer(
         "TextLayer",
-        data=valid_points,
+        data=agg_points,
         get_position="[longitude, latitude, elevation]",
         get_text="Class of Incident",
         get_size=12,
@@ -267,7 +270,7 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
 
     count_layer = pdk.Layer(
         "TextLayer",
-        data=coords_count,
+        data=agg_points,
         get_position="[longitude, latitude, elevation]",
         get_text="case_count_str",
         get_size=18,
@@ -282,6 +285,7 @@ def build_map(dataframe: pd.DataFrame, show_labels: bool, map_style: str) -> Opt
     layers = [heatmap_layer, column_layer, icon_layer, count_layer]
     if show_labels:
         layers.append(text_layer)
+
     pydeck_style = "dark"
     if map_style == "Light":
         pydeck_style = "light"
