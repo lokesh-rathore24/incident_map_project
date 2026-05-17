@@ -3,6 +3,7 @@ from typing import Optional
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+import hashlib
 import io
 
 import pandas as pd
@@ -10,35 +11,56 @@ import pydeck as pdk
 import requests
 import streamlit as st
 
+from classifier import classify_dataframe
 from geocoding import geocode_address, geocode_google_address, load_cache, normalize_address, save_cache
 
 
 REQUIRED_COLUMNS = ["Complainent Address", "Class of Incident"]
 LOG_PATH = Path("nominatim.log")
 
-ICON_MAPPING = {
-    "Cyber Crime (other than financial fraud)": "https://img.icons8.com/color/48/000000/cyber-security.png",
-    "Cyber Financial Fraud": "https://img.icons8.com/color/48/000000/bank-cards.png",
-    "Other IPC/BNS Crimes": "https://img.icons8.com/color/48/000000/handcuffs.png",
-    "Miscellaneous": "https://img.icons8.com/color/48/000000/box-important--v1.png",
-    "Crime Against SC/ST": "https://img.icons8.com/color/48/000000/scales.png",
-    "Crime against Children": "https://img.icons8.com/color/48/000000/children.png",
-    "Matrimonial Dispute": "https://img.icons8.com/color/48/000000/wedding-rings.png",
-    "Illegal Immigration": "https://img.icons8.com/color/48/000000/passport.png",
-    "Job Related Fraud": "https://img.icons8.com/color/48/000000/briefcase.png",
-    "Property/Land Dispute": "https://img.icons8.com/color/48/000000/home.png",
-    "Other Economic Offence": "https://img.icons8.com/color/48/000000/money-bag.png",
-    "Noise Pollution": "https://img.icons8.com/color/48/000000/speaker.png",
-    "Runaway Couples": "https://img.icons8.com/color/48/000000/running.png",
-    "Security Threat": "https://img.icons8.com/color/48/000000/warning-shield.png",
-    "Minor Accident": "https://img.icons8.com/color/48/000000/car-crash.png",
-    "Crime Against Women": "https://img.icons8.com/color/48/000000/female.png",
-    "Corruption/Demand of Bribe": "https://img.icons8.com/color/48/000000/cash.png",
-    "Lost Property": "https://img.icons8.com/color/48/000000/lost-and-found.png",
-    "Hurt": "https://img.icons8.com/color/48/000000/bandage.png",
-    "Intimidation": "https://img.icons8.com/color/48/000000/angry.png",
+import base64
+
+ICONS_DIR = Path("police_icons")
+
+ICON_FILES = {
+    "Cyber Crime (other than financial fraud)": "01_cyber_crime.png",
+    "Cyber Financial Fraud": "02_cyber_financial_fraud.png",
+    "Other IPC/BNS Crimes": "03_other_ipc_bns.png",
+    "Miscellaneous": "04_miscellaneous.png",
+    "Crime Against SC/ST": "05_sc_st_crime.png",
+    "Crime against Children": "06_crime_against_children.png",
+    "Matrimonial Dispute": "07_matrimonial_dispute.png",
+    "Illegal Immigration": "08_illegal_immigration.png",
+    "Job Related Fraud": "09_job_related_fraud.png",
+    "Property/Land Dispute": "10_property_land_dispute.png",
+    "Other Economic Offence": "11_other_economic_offence.png",
+    "Noise Pollution": "12_noise_pollution.png",
+    "Runaway Couples": "13_runaway_couples.png",
+    "Security Threat": "14_security_threat.png",
+    "Minor Accident": "15_minor_accident.png",
+    "Crime Against Women": "16_crime_against_women.png",
+    "Corruption/Demand of Bribe": "17_corruption_bribe.png",
+    "Lost Property": "18_lost_property.png",
+    "Hurt": "19_hurt.png",
+    "Intimidation": "20_intimidation.png",
 }
-DEFAULT_ICON = "https://img.icons8.com/color/48/000000/marker.png"
+
+def load_local_icons() -> Dict[str, str]:
+    mapping = {}
+    for category, filename in ICON_FILES.items():
+        file_path = ICONS_DIR / filename
+        if file_path.exists():
+            try:
+                encoded = base64.b64encode(file_path.read_bytes()).decode("utf-8")
+                mapping[category] = f"data:image/png;base64,{encoded}"
+            except Exception:
+                mapping[category] = "https://img.icons8.com/color/48/000000/marker.png"
+        else:
+            mapping[category] = "https://img.icons8.com/color/48/000000/marker.png"
+    return mapping
+
+ICON_MAPPING = load_local_icons()
+DEFAULT_ICON = ICON_MAPPING.get("Miscellaneous", "https://img.icons8.com/color/48/000000/marker.png")
 
 
 def ensure_required_columns(dataframe: pd.DataFrame) -> Tuple[bool, List[str]]:
@@ -339,7 +361,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                 key=f"name_{view_id}"
             )
         with col_del:
-            if st.button("🗑️", key=f"del_{view_id}", help="Delete this map view", use_container_width=True):
+            if st.button("🗑️", key=f"del_{view_id}", help="Delete this map view", width="stretch"):
                 st.session_state["map_view_ids"].remove(view_id)
                 st.rerun()
 
@@ -393,6 +415,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                 "Icon": [ICON_MAPPING.get(c, DEFAULT_ICON) for c in available_classes],
                 "Class": available_classes
             })
+            filter_df["Show"] = filter_df["Show"].astype(bool)
 
             edited_filter_df = st.data_editor(
                 filter_df,
@@ -402,7 +425,7 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
                     "Class": st.column_config.TextColumn("Class", disabled=True),
                 },
                 hide_index=True,
-                use_container_width=True,
+                width="stretch",
                 key=f"data_editor_{view_id}"
             )
 
@@ -427,14 +450,15 @@ def render_map_view(view_id: int, df: pd.DataFrame, available_classes: List[str]
         metrics[2].metric("Unresolved Records", failed_count)
 
         reset_count = st.session_state.get(f"reset_count_{view_id}", 0)
-        map_data = build_map(view_df, show_labels=show_labels, map_style=map_style)
-        if map_data:
-            deck, _ = map_data
-            # Changing the key forces Streamlit to fully remount the PyDeck component,
-            # which re-applies initial_view_state (zoom + position reset)
-            st.pydeck_chart(deck, use_container_width=True, key=f"map_{view_id}_{reset_count}")
-        else:
-            st.warning("No valid coordinates found to render map.")
+        with st.spinner("Rendering incidents on map..."):
+            map_data = build_map(view_df, show_labels=show_labels, map_style=map_style)
+            if map_data:
+                deck, _ = map_data
+                # Changing the key forces Streamlit to fully remount the PyDeck component,
+                # which re-applies initial_view_state (zoom + position reset)
+                st.pydeck_chart(deck, use_container_width=True, key=f"map_{view_id}_{reset_count}")
+            else:
+                st.warning("No valid coordinates found to render map.")
 
 
 def main() -> None:
@@ -476,7 +500,7 @@ def main() -> None:
             data=buf,
             file_name="crimelens_sample.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            use_container_width=True,
+            width="stretch",
             help="Download a blank Excel template with all required columns."
         )
 
@@ -497,21 +521,102 @@ def main() -> None:
 
         col_btn1, col_btn2, col_info = st.columns([1, 1, 2])
         with col_btn1:
-            geocode_now = st.button("Geocode missing addresses", type="primary", use_container_width=True)
+            geocode_now = st.button("Geocode missing addresses", type="primary", width="stretch")
         with col_btn2:
-            clear_geocode = st.button("Reset session result", use_container_width=True)
+            clear_geocode = st.button("Reset session result", width="stretch")
         with col_info:
             st.info(f"Scope: `{district.strip() or '-'}, {state.strip() or '-'}, {country.strip() or '-'}`")
 
     if uploaded_file is None:
+        if not st.session_state.get("_ready_logged"):
+            print("📡 CrimeLens app is ready! Open http://localhost:8501 and upload your .xlsx file to trigger classification.", flush=True)
+            st.session_state["_ready_logged"] = True
         st.info("Upload an `.xlsx` file to begin.")
         return
 
     try:
         raw_df = pd.read_excel(uploaded_file)
+        
+        # Normalize column names (case-insensitive & strip whitespace)
+        col_mapping = {}
+        for col in raw_df.columns:
+            norm = str(col).strip().lower()
+            if norm == "complaint description":
+                col_mapping[col] = "Complaint Description"
+            elif norm == "class of incident":
+                col_mapping[col] = "Class of Incident"
+            elif norm == "complainent address":
+                col_mapping[col] = "Complainent Address"
+            elif norm in ("incident date", "date"):
+                col_mapping[col] = "Incident Date"
+            else:
+                col_mapping[col] = str(col).strip()
+        raw_df = raw_df.rename(columns=col_mapping)
+        
     except Exception as exc:  # broad exception to show user-friendly error
         st.error(f"Could not read Excel file: {exc}")
         return
+
+    # --- AI Classification Step ---
+    openai_api_key = st.secrets.get("OPEN_AI_API_KEY", "")
+    
+    # Diagnostic prints to terminal
+    print(f"📊 File uploaded! Row count: {len(raw_df)}", flush=True)
+    print(f"   Available columns: {list(raw_df.columns)}", flush=True)
+    print(f"   OpenAI API Key detected: {bool(openai_api_key)}", flush=True)
+    
+    if openai_api_key and "Complaint Description" in raw_df.columns:
+        # Include API key in hash so changing the key forces re-classification
+        hash_input = uploaded_file.getvalue() + openai_api_key.encode("utf-8")
+        file_hash = hashlib.md5(hash_input).hexdigest()
+
+        if st.session_state.get("_ai_classified_hash") != file_hash:
+            placeholder = st.empty()
+            with placeholder.container():
+                st.markdown(
+                    """
+                    <div style="
+                        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                        border-radius: 16px;
+                        padding: 2rem;
+                        text-align: center;
+                        border: 1px solid rgba(255,255,255,0.1);
+                        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+                    ">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤖</div>
+                        <h3 style="color: #e0e0e0; margin: 0 0 0.5rem 0;">Cleaning file with AI</h3>
+                        <p style="color: #9e9e9e; font-size: 0.9rem;">Classifying complaint descriptions into incident categories using OpenAI</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+                progress_bar = st.progress(0, text="Initialising...")
+
+                def _update_progress(done: int, total: int) -> None:
+                    progress_bar.progress(
+                        done / total,
+                        text=f"Processing batch {done} / {total}  ({done * 100 // total}%)",
+                    )
+
+                raw_df = classify_dataframe(
+                    raw_df, openai_api_key, batch_size=50, progress_callback=_update_progress
+                )
+
+            placeholder.empty()
+            st.session_state["_ai_classified_hash"] = file_hash
+            st.session_state["_ai_classified_df"] = raw_df
+            st.toast("✅ AI classification complete!", icon="🤖")
+        else:
+            raw_df = st.session_state["_ai_classified_df"]
+
+    # --- Safety net: ensure Class of Incident is never None/NaN/empty ---
+    if "Class of Incident" in raw_df.columns:
+        raw_df["Class of Incident"] = (
+            raw_df["Class of Incident"]
+            .fillna("Miscellaneous")
+            .astype(str)
+            .replace({"None": "Miscellaneous", "nan": "Miscellaneous", "null": "Miscellaneous", "": "Miscellaneous"})
+        )
 
     has_columns, missing_columns = ensure_required_columns(raw_df)
     if not has_columns:
@@ -577,7 +682,7 @@ def main() -> None:
     st.markdown("<br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("✨ Add New Map View", type="primary", use_container_width=True):
+        if st.button("✨ Add New Map View", type="primary", width="stretch"):
             st.session_state["map_view_ids"].append(st.session_state["next_view_id"])
             st.session_state["next_view_id"] += 1
             st.rerun()
@@ -585,13 +690,19 @@ def main() -> None:
 
     view_ids = st.session_state["map_view_ids"]
     
-    for i in range(0, len(view_ids), 2):
-        cols = st.columns(2)
-        with cols[0]:
+    i = 0
+    while i < len(view_ids):
+        # If there's only 1 view remaining, render it full-width
+        if i == len(view_ids) - 1:
             render_map_view(view_ids[i], result_df, available_classes, map_style, datetime_cols)
-        if i + 1 < len(view_ids):
+            i += 1
+        else:
+            cols = st.columns(2)
+            with cols[0]:
+                render_map_view(view_ids[i], result_df, available_classes, map_style, datetime_cols)
             with cols[1]:
                 render_map_view(view_ids[i+1], result_df, available_classes, map_style, datetime_cols)
+            i += 2
 
     unresolved = result_df[result_df["latitude"].isna() | result_df["longitude"].isna()]
     diagnostics = st.session_state.get("geocode_diagnostics", {})
@@ -605,13 +716,13 @@ def main() -> None:
     with st.expander("Show unresolved addresses"):
         st.dataframe(
             unresolved[["Complainent Address", "Class of Incident", "cleaned_query"]].drop_duplicates(),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
     st.markdown("---")
     st.markdown("### Full Data View")
-    st.dataframe(result_df, use_container_width=True, hide_index=True)
+    st.dataframe(result_df, width="stretch", hide_index=True)
 
 
 if __name__ == "__main__":

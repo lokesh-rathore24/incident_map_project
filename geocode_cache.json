@@ -1,0 +1,3434 @@
+{
+  "BHAINI KALAN, Karnal, Haryana, India_google": {
+    "lat": 29.75145299999999,
+    "lon": 76.9398195,
+    "status": "success",
+    "matched_query": "BHAINI KALAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BHAINI KALAN"
+  },
+  "HNO 3 Street 1 Ramdev colony sector 3 Karnal Karnal, Karnal, Haryana, India_google": {
+    "lat": 29.669657,
+    "lon": 76.982608,
+    "status": "success",
+    "matched_query": "HNO 3 Street 1 Ramdev colony sector 3 Karnal Karnal, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HNO 3 Street 1 Ramdev colony sector 3 Karnal Karnal"
+  },
+  "I/C सीातामाई, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "I/C सीातामाई, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "I/C सीातामाई"
+  },
+  "OMCOLONY, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "OMCOLONY, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "OMCOLONY"
+  },
+  "PADHANA, Karnal, Haryana, India_google": {
+    "lat": 29.8163748,
+    "lon": 76.9563845,
+    "status": "success",
+    "matched_query": "PADHANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PADHANA"
+  },
+  "RAMANA RAMANI, Karnal, Haryana, India_google": {
+    "lat": 29.7992853,
+    "lon": 76.8216396,
+    "status": "success",
+    "matched_query": "RAMANA RAMANI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAMANA RAMANI"
+  },
+  "RAMANA RAMANI NILOKHERI, Karnal, Haryana, India_google": {
+    "lat": 29.7992853,
+    "lon": 76.8216396,
+    "status": "success",
+    "matched_query": "RAMANA RAMANI NILOKHERI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAMANA RAMANI NILOKHERI"
+  },
+  "Ramba, Karnal, Haryana, India_google": {
+    "lat": 29.7935174,
+    "lon": 76.9837477,
+    "status": "success",
+    "matched_query": "Ramba, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "Ramba"
+  },
+  "SECTOR 1 taraori, Karnal, Haryana, India_google": {
+    "lat": 29.794622,
+    "lon": 76.95129299999999,
+    "status": "success",
+    "matched_query": "SECTOR 1 taraori, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SECTOR 1 taraori"
+  },
+  "SHANI MANDIR taraori, Karnal, Haryana, India_google": {
+    "lat": 29.8066534,
+    "lon": 76.93034879999999,
+    "status": "success",
+    "matched_query": "SHANI MANDIR taraori, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SHANI MANDIR taraori"
+  },
+  "TAKHANA nilokheri KNL, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "TAKHANA nilokheri KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TAKHANA nilokheri KNL"
+  },
+  "taraori, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "taraori, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "taraori"
+  },
+  "balana, Karnal, Haryana, India_google": {
+    "lat": 29.28035,
+    "lon": 76.89947939999999,
+    "status": "success",
+    "matched_query": "balana, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "balana"
+  },
+  "कुडक जागीर, Karnal, Haryana, India_google": {
+    "lat": 29.78199249999999,
+    "lon": 76.91820969999999,
+    "status": "success",
+    "matched_query": "कुडक जागीर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कुडक जागीर"
+  },
+  "कुडक तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "कुडक तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कुडक तरावडी"
+  },
+  "पडवाला, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "पडवाला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पडवाला"
+  },
+  "रम्बा, Karnal, Haryana, India_google": {
+    "lat": 29.7935174,
+    "lon": 76.9837477,
+    "status": "success",
+    "matched_query": "रम्बा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "रम्बा"
+  },
+  "सुल्तानपुर, Karnal, Haryana, India_google": {
+    "lat": 29.7479516,
+    "lon": 76.9261338,
+    "status": "success",
+    "matched_query": "सुल्तानपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सुल्तानपुर"
+  },
+  "सौंकड़ा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सौंकड़ा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सौंकड़ा"
+  },
+  "सौकड़ा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सौकड़ा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सौकड़ा"
+  },
+  "गुमटो करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गुमटो करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुमटो करनाल"
+  },
+  "जोगी माजरा तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "जोगी माजरा तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जोगी माजरा तरावडी"
+  },
+  "डाचर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "डाचर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "डाचर"
+  },
+  "डेरी महोल्ला तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.68971119999999,
+    "lon": 76.978825,
+    "status": "success",
+    "matched_query": "डेरी महोल्ला तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "डेरी महोल्ला तरावडी"
+  },
+  "डोडवा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "डोडवा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "डोडवा"
+  },
+  "तखणा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "तखणा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तखणा"
+  },
+  "तखाना, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "तखाना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तखाना"
+  },
+  "तखाना तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "तखाना तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तखाना तरावडी"
+  },
+  "तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तरावडी"
+  },
+  "तरावडी करनाली गेट, Karnal, Haryana, India_google": {
+    "lat": 29.6934525,
+    "lon": 76.9912956,
+    "status": "success",
+    "matched_query": "तरावडी करनाली गेट, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तरावडी करनाली गेट"
+  },
+  "दयानगर तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "दयानगर तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दयानगर तरावडी"
+  },
+  "दादुपुर, Karnal, Haryana, India_google": {
+    "lat": 29.6707011,
+    "lon": 76.8936942,
+    "status": "success",
+    "matched_query": "दादुपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दादुपुर"
+  },
+  "नडाना, Karnal, Haryana, India_google": {
+    "lat": 29.7706125,
+    "lon": 76.9024219,
+    "status": "success",
+    "matched_query": "नडाना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नडाना"
+  },
+  "नरायणा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "नरायणा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नरायणा"
+  },
+  "निवासी329,DDGF CHD CITY करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "निवासी329,DDGF CHD CITY करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "निवासी329,DDGF CHD CITY करनाल"
+  },
+  "पधाना, Karnal, Haryana, India_google": {
+    "lat": 29.8163748,
+    "lon": 76.9563845,
+    "status": "success",
+    "matched_query": "पधाना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पधाना"
+  },
+  "पहलवान कालोनी तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "पहलवान कालोनी तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पहलवान कालोनी तरावडी"
+  },
+  "पानीपत, Karnal, Haryana, India_google": {
+    "lat": 29.3765544,
+    "lon": 76.964306,
+    "status": "success",
+    "matched_query": "पानीपत, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पानीपत"
+  },
+  "बराना, Karnal, Haryana, India_google": {
+    "lat": 29.4588246,
+    "lon": 77.0642451,
+    "status": "success",
+    "matched_query": "बराना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बराना"
+  },
+  "बीड नरायणा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "बीड नरायणा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बीड नरायणा"
+  },
+  "बीर नरायणा तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "बीर नरायणा तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बीर नरायणा तरावडी"
+  },
+  "भडोली, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "भडोली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भडोली"
+  },
+  "भैणी खुर्द तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.753164,
+    "lon": 76.95181869999999,
+    "status": "success",
+    "matched_query": "भैणी खुर्द तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भैणी खुर्द तरावडी"
+  },
+  "मलिक पुर जिला कैथल, Karnal, Haryana, India_google": {
+    "lat": 30.1231007,
+    "lon": 76.2442911,
+    "status": "success",
+    "matched_query": "मलिक पुर जिला कैथल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मलिक पुर जिला कैथल"
+  },
+  "रमाना रमानी, Karnal, Haryana, India_google": {
+    "lat": 29.6545417,
+    "lon": 76.5786643,
+    "status": "success",
+    "matched_query": "रमाना रमानी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "रमाना रमानी"
+  },
+  "राम गंधाली रोड महादेव कालोनी य़मुनानगर, Karnal, Haryana, India_google": {
+    "lat": 29.6791719,
+    "lon": 77.01695579999999,
+    "status": "success",
+    "matched_query": "राम गंधाली रोड महादेव कालोनी य़मुनानगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "राम गंधाली रोड महादेव कालोनी य़मुनानगर"
+  },
+  "रावर, Karnal, Haryana, India_google": {
+    "lat": 29.6425306,
+    "lon": 77.01758319999999,
+    "status": "success",
+    "matched_query": "रावर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "रावर"
+  },
+  "3 तरावडी करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.7942151,
+    "lon": 76.91777739999999,
+    "status": "success",
+    "matched_query": "3 तरावडी करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "3 तरावडी करनाल"
+  },
+  "न0 15 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.795865,
+    "lon": 76.9180006,
+    "status": "success",
+    "matched_query": "न0 15 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 15 तरावडी"
+  },
+  "न0 15 पहलवान कॉलोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "न0 15 पहलवान कॉलोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 15 पहलवान कॉलोनी"
+  },
+  "न0 2 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.802844,
+    "lon": 76.9281788,
+    "status": "success",
+    "matched_query": "न0 2 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 2 तरावडी"
+  },
+  "न0 3 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7942151,
+    "lon": 76.91777739999999,
+    "status": "success",
+    "matched_query": "न0 3 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 3 तरावडी"
+  },
+  "न0 8 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7997418,
+    "lon": 76.94274349999999,
+    "status": "success",
+    "matched_query": "न0 8 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 8 तरावडी"
+  },
+  "न0 9 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7990248,
+    "lon": 76.934377,
+    "status": "success",
+    "matched_query": "न0 9 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 9 तरावडी"
+  },
+  "नं03 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "नं03 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नं03 तरावडी"
+  },
+  "नं5 पास काली माता मन्दिर तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.6844085,
+    "lon": 76.9868094,
+    "status": "success",
+    "matched_query": "नं5 पास काली माता मन्दिर तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नं5 पास काली माता मन्दिर तरावडी"
+  },
+  "सौकडा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सौकडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सौकडा"
+  },
+  "शामगढ, Karnal, Haryana, India_google": {
+    "lat": 29.7730868,
+    "lon": 76.9571046,
+    "status": "success",
+    "matched_query": "शामगढ, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शामगढ"
+  },
+  "शामगढ तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7730868,
+    "lon": 76.9571046,
+    "status": "success",
+    "matched_query": "शामगढ तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शामगढ तरावडी"
+  },
+  "शेखनपुर, Karnal, Haryana, India_google": {
+    "lat": 29.7791058,
+    "lon": 76.91363969999999,
+    "status": "success",
+    "matched_query": "शेखनपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शेखनपुर"
+  },
+  "शेखनपुर तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7791058,
+    "lon": 76.91363969999999,
+    "status": "success",
+    "matched_query": "शेखनपुर तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शेखनपुर तरावडी"
+  },
+  "श्यामगढ, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "श्यामगढ, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "श्यामगढ"
+  },
+  "सग्गा, Karnal, Haryana, India_google": {
+    "lat": 29.76152489999999,
+    "lon": 76.8418246,
+    "status": "success",
+    "matched_query": "सग्गा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सग्गा"
+  },
+  "सांवत निगदु, Karnal, Haryana, India_google": {
+    "lat": 29.8427495,
+    "lon": 76.8014252,
+    "status": "success",
+    "matched_query": "सांवत निगदु, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सांवत निगदु"
+  },
+  "सागाखेडा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सागाखेडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सागाखेडा"
+  },
+  "सुन्दरपुर सधीर, Karnal, Haryana, India_google": {
+    "lat": 29.959889,
+    "lon": 76.8648893,
+    "status": "success",
+    "matched_query": "सुन्दरपुर सधीर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सुन्दरपुर सधीर"
+  },
+  "सुलतानपुर तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7479516,
+    "lon": 76.9261338,
+    "status": "success",
+    "matched_query": "सुलतानपुर तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सुलतानपुर तरावडी"
+  },
+  "_google": {
+    "lat": null,
+    "lon": null,
+    "status": "no_result",
+    "matched_query": "",
+    "matched_pass": "",
+    "cleaned_address": ",,,,,"
+  },
+  "08 UTAM COLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6960534,
+    "lon": 77.0104276,
+    "status": "success",
+    "matched_query": "08 UTAM COLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "08 UTAM COLONY KARNAL"
+  },
+  "1349-B दयालपुरा गेट करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6934525,
+    "lon": 76.9912956,
+    "status": "success",
+    "matched_query": "1349-B दयालपुरा गेट करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "1349-B दयालपुरा गेट करनाल"
+  },
+  "135-C MADOL TOWN KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.69883299999999,
+    "lon": 76.998503,
+    "status": "success",
+    "matched_query": "135-C MADOL TOWN KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "135-C MADOL TOWN KARNAL"
+  },
+  "385/14 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "385/14 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "385/14 KARNAL"
+  },
+  "398 model town knl, Karnal, Haryana, India_google": {
+    "lat": 29.697044,
+    "lon": 76.998514,
+    "status": "success",
+    "matched_query": "398 model town knl, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "398 model town knl"
+  },
+  "403/8 UE KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6503022,
+    "lon": 76.8758322,
+    "status": "success",
+    "matched_query": "403/8 UE KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "403/8 UE KARNAL"
+  },
+  "698 चांद सराय करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6852221,
+    "lon": 76.9904212,
+    "status": "success",
+    "matched_query": "698 चांद सराय करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "698 चांद सराय करनाल"
+  },
+  "78 M U E SEC 8, Karnal, Haryana, India_google": {
+    "lat": 29.696038,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "78 M U E SEC 8, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "78 M U E SEC 8"
+  },
+  "795 सैक्टर 4 करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6509347,
+    "lon": 76.8757468,
+    "status": "success",
+    "matched_query": "795 सैक्टर 4 करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "795 सैक्टर 4 करनाल"
+  },
+  "ADARSH NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.6996281,
+    "lon": 77.0237973,
+    "status": "success",
+    "matched_query": "ADARSH NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ADARSH NAGAR"
+  },
+  "AJAD NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.6920685,
+    "lon": 76.9754674,
+    "status": "success",
+    "matched_query": "AJAD NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "AJAD NAGAR"
+  },
+  "AMBALA, Karnal, Haryana, India_google": {
+    "lat": 30.286157,
+    "lon": 76.964306,
+    "status": "success",
+    "matched_query": "AMBALA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "AMBALA"
+  },
+  "ANAND VIHAR, Karnal, Haryana, India_google": {
+    "lat": 29.6792056,
+    "lon": 76.9695268,
+    "status": "success",
+    "matched_query": "ANAND VIHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ANAND VIHAR"
+  },
+  "ASANDH, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "ASANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ASANDH"
+  },
+  "ASHOK NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.4056908,
+    "lon": 76.9760074,
+    "status": "success",
+    "matched_query": "ASHOK NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ASHOK NAGAR"
+  },
+  "ASHOKA NARSARI KUNJPURA ROAD KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.7127504,
+    "lon": 77.0112537,
+    "status": "success",
+    "matched_query": "ASHOKA NARSARI KUNJPURA ROAD KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ASHOKA NARSARI KUNJPURA ROAD KARNAL"
+  },
+  "AUGAND, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "AUGAND, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "AUGAND"
+  },
+  "BADOLI, Karnal, Haryana, India_google": {
+    "lat": 29.4715913,
+    "lon": 76.95511239999999,
+    "status": "success",
+    "matched_query": "BADOLI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BADOLI"
+  },
+  "BAGPATI COLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.71918,
+    "lon": 77.00767499999999,
+    "status": "success",
+    "matched_query": "BAGPATI COLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BAGPATI COLONY KARNAL"
+  },
+  "BAHRI ASSANDH, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "BAHRI ASSANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BAHRI ASSANDH"
+  },
+  "BAJIDPUR, Karnal, Haryana, India_google": {
+    "lat": 29.9866705,
+    "lon": 76.905242,
+    "status": "success",
+    "matched_query": "BAJIDPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BAJIDPUR"
+  },
+  "BALLA, Karnal, Haryana, India_google": {
+    "lat": 29.505616,
+    "lon": 76.78702899999999,
+    "status": "success",
+    "matched_query": "BALLA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BALLA"
+  },
+  "BALLAH, Karnal, Haryana, India_google": {
+    "lat": 29.505616,
+    "lon": 76.78702899999999,
+    "status": "success",
+    "matched_query": "BALLAH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BALLAH"
+  },
+  "BALRAGDAN, Karnal, Haryana, India_google": {
+    "lat": 29.5506468,
+    "lon": 76.8101038,
+    "status": "success",
+    "matched_query": "BALRAGDAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BALRAGDAN"
+  },
+  "BANSA, Karnal, Haryana, India_google": {
+    "lat": 29.6035641,
+    "lon": 76.8338952,
+    "status": "success",
+    "matched_query": "BANSA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BANSA"
+  },
+  "BARANA, Karnal, Haryana, India_google": {
+    "lat": 29.8834774,
+    "lon": 76.920985,
+    "status": "success",
+    "matched_query": "BARANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BARANA"
+  },
+  "BARTHAL, Karnal, Haryana, India_google": {
+    "lat": 29.8670349,
+    "lon": 76.8735374,
+    "status": "success",
+    "matched_query": "BARTHAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BARTHAL"
+  },
+  "BASTADA, Karnal, Haryana, India_google": {
+    "lat": 29.5549596,
+    "lon": 76.9700199,
+    "status": "success",
+    "matched_query": "BASTADA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BASTADA"
+  },
+  "BASU GATI, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "BASU GATI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BASU GATI"
+  },
+  "BEEER MJARA, Karnal, Haryana, India_google": {
+    "lat": 29.7922344,
+    "lon": 76.7170574,
+    "status": "success",
+    "matched_query": "BEEER MJARA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BEEER MJARA"
+  },
+  "BEGAMPUR, Karnal, Haryana, India_google": {
+    "lat": 29.5025103,
+    "lon": 76.9124465,
+    "status": "success",
+    "matched_query": "BEGAMPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BEGAMPUR"
+  },
+  "BHOJI KHALSHA, Karnal, Haryana, India_google": {
+    "lat": 29.9235347,
+    "lon": 77.1157964,
+    "status": "success",
+    "matched_query": "BHOJI KHALSHA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BHOJI KHALSHA"
+  },
+  "BOHLAKHALSA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "BOHLAKHALSA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BOHLAKHALSA"
+  },
+  "BRAS, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "BRAS, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BRAS"
+  },
+  "BRASS, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "BRASS, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BRASS"
+  },
+  "BUDANPUR, Karnal, Haryana, India_google": {
+    "lat": 29.54554,
+    "lon": 77.0881034,
+    "status": "success",
+    "matched_query": "BUDANPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BUDANPUR"
+  },
+  "BUTANKHERI, Karnal, Haryana, India_google": {
+    "lat": 29.8955121,
+    "lon": 77.0017465,
+    "status": "success",
+    "matched_query": "BUTANKHERI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BUTANKHERI"
+  },
+  "BY MAIL, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "BY MAIL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BY MAIL"
+  },
+  "BYANA, Karnal, Haryana, India_google": {
+    "lat": 29.8399933,
+    "lon": 77.1154368,
+    "status": "success",
+    "matched_query": "BYANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "BYANA"
+  },
+  "CHIRAW, Karnal, Haryana, India_google": {
+    "lat": 29.6751872,
+    "lon": 76.9167689,
+    "status": "success",
+    "matched_query": "CHIRAW, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "CHIRAW"
+  },
+  "CHNADRAOW, Karnal, Haryana, India_google": {
+    "lat": 29.91240209999999,
+    "lon": 77.1794302,
+    "status": "success",
+    "matched_query": "CHNADRAOW, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "CHNADRAOW"
+  },
+  "CHOCHRA, Karnal, Haryana, India_google": {
+    "lat": 29.6321029,
+    "lon": 76.631163,
+    "status": "success",
+    "matched_query": "CHOCHRA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "CHOCHRA"
+  },
+  "DACHAR, Karnal, Haryana, India_google": {
+    "lat": 29.64322689999999,
+    "lon": 76.7110495,
+    "status": "success",
+    "matched_query": "DACHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DACHAR"
+  },
+  "DACHER, Karnal, Haryana, India_google": {
+    "lat": 29.64322689999999,
+    "lon": 76.7110495,
+    "status": "success",
+    "matched_query": "DACHER, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DACHER"
+  },
+  "DANIYALPUR, Karnal, Haryana, India_google": {
+    "lat": 29.7272007,
+    "lon": 77.02478099999999,
+    "status": "success",
+    "matched_query": "DANIYALPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DANIYALPUR"
+  },
+  "DARAD KNL, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "DARAD KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DARAD KNL"
+  },
+  "DARAR, Karnal, Haryana, India_google": {
+    "lat": 29.7632492,
+    "lon": 77.0082254,
+    "status": "success",
+    "matched_query": "DARAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DARAR"
+  },
+  "DAVTHARA UP, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "DAVTHARA UP, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DAVTHARA UP"
+  },
+  "DELHI, Karnal, Haryana, India_google": {
+    "lat": 29.78199249999999,
+    "lon": 76.91820969999999,
+    "status": "success",
+    "matched_query": "DELHI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DELHI"
+  },
+  "DODVA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "DODVA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DODVA"
+  },
+  "DYALPURA GATE, Karnal, Haryana, India_google": {
+    "lat": 29.6856058,
+    "lon": 76.98775479999999,
+    "status": "success",
+    "matched_query": "DYALPURA GATE, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "DYALPURA GATE"
+  },
+  "FAJILPUR, Karnal, Haryana, India_google": {
+    "lat": 29.8353006,
+    "lon": 77.0823482,
+    "status": "success",
+    "matched_query": "FAJILPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "FAJILPUR"
+  },
+  "FOOSGARH, Karnal, Haryana, India_google": {
+    "lat": 29.680888,
+    "lon": 77.0240613,
+    "status": "success",
+    "matched_query": "FOOSGARH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "FOOSGARH"
+  },
+  "FUSGAD, Karnal, Haryana, India_google": {
+    "lat": 29.680888,
+    "lon": 77.0240613,
+    "status": "success",
+    "matched_query": "FUSGAD, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "FUSGAD"
+  },
+  "GHARAUNDA, Karnal, Haryana, India_google": {
+    "lat": 29.5397333,
+    "lon": 76.9731017,
+    "status": "success",
+    "matched_query": "GHARAUNDA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GHARAUNDA"
+  },
+  "GHEER, Karnal, Haryana, India_google": {
+    "lat": 29.78147629999999,
+    "lon": 77.1060866,
+    "status": "success",
+    "matched_query": "GHEER, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GHEER"
+  },
+  "GONDER, Karnal, Haryana, India_google": {
+    "lat": 29.6472747,
+    "lon": 76.75240869999999,
+    "status": "success",
+    "matched_query": "GONDER, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GONDER"
+  },
+  "GONDER GONDER, Karnal, Haryana, India_google": {
+    "lat": 29.6472747,
+    "lon": 76.75240869999999,
+    "status": "success",
+    "matched_query": "GONDER GONDER, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GONDER GONDER"
+  },
+  "GULARPUR, Karnal, Haryana, India_google": {
+    "lat": 29.6460699,
+    "lon": 76.782702,
+    "status": "success",
+    "matched_query": "GULARPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GULARPUR"
+  },
+  "GUNIYANA, Karnal, Haryana, India_google": {
+    "lat": 29.7147614,
+    "lon": 76.70984159999999,
+    "status": "success",
+    "matched_query": "GUNIYANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GUNIYANA"
+  },
+  "GURUNANK PURA, Karnal, Haryana, India_google": {
+    "lat": 29.6799988,
+    "lon": 76.9545201,
+    "status": "success",
+    "matched_query": "GURUNANK PURA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "GURUNANK PURA"
+  },
+  "HAIBUTPUR, Karnal, Haryana, India_google": {
+    "lat": 29.94231379999999,
+    "lon": 76.9955374,
+    "status": "success",
+    "matched_query": "HAIBUTPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HAIBUTPUR"
+  },
+  "HAKIKAT NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.6684043,
+    "lon": 76.96286580000002,
+    "status": "success",
+    "matched_query": "HAKIKAT NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HAKIKAT NAGAR"
+  },
+  "HASNPUR, Karnal, Haryana, India_google": {
+    "lat": 29.5738879,
+    "lon": 76.9571046,
+    "status": "success",
+    "matched_query": "HASNPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HASNPUR"
+  },
+  "HIMACHAL PARDESH, Karnal, Haryana, India_google": {
+    "lat": 29.6960975,
+    "lon": 76.98623839999999,
+    "status": "success",
+    "matched_query": "HIMACHAL PARDESH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HIMACHAL PARDESH"
+  },
+  "HPS KNL, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "HPS KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "HPS KNL"
+  },
+  "INDRA COLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.4126936,
+    "lon": 76.9765475,
+    "status": "success",
+    "matched_query": "INDRA COLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "INDRA COLONY KARNAL"
+  },
+  "JALMANA, Karnal, Haryana, India_google": {
+    "lat": 29.59197169999999,
+    "lon": 76.71200639999999,
+    "status": "success",
+    "matched_query": "JALMANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "JALMANA"
+  },
+  "JIND, Karnal, Haryana, India_google": {
+    "lat": 29.5999095,
+    "lon": 76.91820969999999,
+    "status": "success",
+    "matched_query": "JIND, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "JIND"
+  },
+  "JOHAD MAJRA, Karnal, Haryana, India_google": {
+    "lat": 29.8387061,
+    "lon": 77.0593246,
+    "status": "success",
+    "matched_query": "JOHAD MAJRA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "JOHAD MAJRA"
+  },
+  "JUNDLA, Karnal, Haryana, India_google": {
+    "lat": 29.6509413,
+    "lon": 76.8735374,
+    "status": "success",
+    "matched_query": "JUNDLA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "JUNDLA"
+  },
+  "KACHWA, Karnal, Haryana, India_google": {
+    "lat": 29.7273656,
+    "lon": 76.88719789999999,
+    "status": "success",
+    "matched_query": "KACHWA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KACHWA"
+  },
+  "KAIMLA, Karnal, Haryana, India_google": {
+    "lat": 29.5085284,
+    "lon": 77.0017465,
+    "status": "success",
+    "matched_query": "KAIMLA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KAIMLA"
+  },
+  "KAITHAL, Karnal, Haryana, India_google": {
+    "lat": 29.8042758,
+    "lon": 76.4039016,
+    "status": "success",
+    "matched_query": "KAITHAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KAITHAL"
+  },
+  "KALRON, Karnal, Haryana, India_google": {
+    "lat": 29.5697768,
+    "lon": 77.01614359999999,
+    "status": "success",
+    "matched_query": "KALRON, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KALRON"
+  },
+  "KALSORA, Karnal, Haryana, India_google": {
+    "lat": 29.8655784,
+    "lon": 77.1442022,
+    "status": "success",
+    "matched_query": "KALSORA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KALSORA"
+  },
+  "KARAN GATE KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.690608,
+    "lon": 76.9881016,
+    "status": "success",
+    "matched_query": "KARAN GATE KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KARAN GATE KARNAL"
+  },
+  "KARAN VIHAR, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "KARAN VIHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KARAN VIHAR"
+  },
+  "KARAN VIHAR KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "KARAN VIHAR KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KARAN VIHAR KARNAL"
+  },
+  "KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KARNAL"
+  },
+  "KARSA DOD, Karnal, Haryana, India_google": {
+    "lat": 29.8439085,
+    "lon": 76.7083984,
+    "status": "success",
+    "matched_query": "KARSA DOD, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KARSA DOD"
+  },
+  "KHARJPUR, Karnal, Haryana, India_google": {
+    "lat": 29.7114066,
+    "lon": 77.1096829,
+    "status": "success",
+    "matched_query": "KHARJPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KHARJPUR"
+  },
+  "KHEDA, Karnal, Haryana, India_google": {
+    "lat": 29.6802575,
+    "lon": 77.0354665,
+    "status": "success",
+    "matched_query": "KHEDA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KHEDA"
+  },
+  "KHEDI, Karnal, Haryana, India_google": {
+    "lat": 29.9437089,
+    "lon": 76.954584,
+    "status": "success",
+    "matched_query": "KHEDI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KHEDI"
+  },
+  "KHOD SAMA SAMLI UP, Karnal, Haryana, India_google": {
+    "lat": 29.63136,
+    "lon": 77.1643337,
+    "status": "success",
+    "matched_query": "KHOD SAMA SAMLI UP, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KHOD SAMA SAMLI UP"
+  },
+  "KHRAJPUR, Karnal, Haryana, India_google": {
+    "lat": 29.7114066,
+    "lon": 77.1096829,
+    "status": "success",
+    "matched_query": "KHRAJPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KHRAJPUR"
+  },
+  "KISAN BASTI, Karnal, Haryana, India_google": {
+    "lat": 29.8441199,
+    "lon": 76.9282948,
+    "status": "success",
+    "matched_query": "KISAN BASTI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KISAN BASTI"
+  },
+  "KKR, Karnal, Haryana, India_google": {
+    "lat": 29.6681083,
+    "lon": 76.9909283,
+    "status": "success",
+    "matched_query": "KKR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KKR"
+  },
+  "KNL, Karnal, Haryana, India_google": {
+    "lat": 29.6700129,
+    "lon": 77.0119175,
+    "status": "success",
+    "matched_query": "KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KNL"
+  },
+  "KOHAND, Karnal, Haryana, India_google": {
+    "lat": 29.491854,
+    "lon": 76.96286580000002,
+    "status": "success",
+    "matched_query": "KOHAND, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KOHAND"
+  },
+  "KURALI, Karnal, Haryana, India_google": {
+    "lat": 29.7516411,
+    "lon": 76.9844677,
+    "status": "success",
+    "matched_query": "KURALI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KURALI"
+  },
+  "KURUKSHETRA, Karnal, Haryana, India_google": {
+    "lat": 29.9695121,
+    "lon": 76.878282,
+    "status": "success",
+    "matched_query": "KURUKSHETRA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KURUKSHETRA"
+  },
+  "KUTAIL, Karnal, Haryana, India_google": {
+    "lat": 29.5992385,
+    "lon": 77.0149885,
+    "status": "success",
+    "matched_query": "KUTAIL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "KUTAIL"
+  },
+  "LUDHIANA, Karnal, Haryana, India_google": {
+    "lat": 30.900965,
+    "lon": 75.8572758,
+    "status": "success",
+    "matched_query": "LUDHIANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "LUDHIANA"
+  },
+  "MADANPUR, Karnal, Haryana, India_google": {
+    "lat": 29.648256,
+    "lon": 76.9779111,
+    "status": "success",
+    "matched_query": "MADANPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MADANPUR"
+  },
+  "MAKHALI, Karnal, Haryana, India_google": {
+    "lat": 29.9372199,
+    "lon": 77.1450803,
+    "status": "success",
+    "matched_query": "MAKHALI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MAKHALI"
+  },
+  "MAKHU MAJRA, Karnal, Haryana, India_google": {
+    "lat": 29.7720178,
+    "lon": 77.0607637,
+    "status": "success",
+    "matched_query": "MAKHU MAJRA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MAKHU MAJRA"
+  },
+  "MANAS VIHAR, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "MANAS VIHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MANAS VIHAR"
+  },
+  "MANGAL COLONY, Karnal, Haryana, India_google": {
+    "lat": 29.6673117,
+    "lon": 76.9769075,
+    "status": "success",
+    "matched_query": "MANGAL COLONY, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MANGAL COLONY"
+  },
+  "MANGAL COLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6673117,
+    "lon": 76.9769075,
+    "status": "success",
+    "matched_query": "MANGAL COLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MANGAL COLONY KARNAL"
+  },
+  "MANGALCOLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6673117,
+    "lon": 76.9769075,
+    "status": "success",
+    "matched_query": "MANGALCOLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MANGALCOLONY KARNAL"
+  },
+  "MANGLORA, Karnal, Haryana, India_google": {
+    "lat": 29.6428,
+    "lon": 77.1068059,
+    "status": "success",
+    "matched_query": "MANGLORA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MANGLORA"
+  },
+  "MATAK MAJRI, Karnal, Haryana, India_google": {
+    "lat": 29.8741136,
+    "lon": 77.0651415,
+    "status": "success",
+    "matched_query": "MATAK MAJRI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MATAK MAJRI"
+  },
+  "MEERUT ROAD S/DIVN UHBVN, Karnal, Haryana, India_google": {
+    "lat": 29.6803917,
+    "lon": 76.9938512,
+    "status": "success",
+    "matched_query": "MEERUT ROAD S/DIVN UHBVN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MEERUT ROAD S/DIVN UHBVN"
+  },
+  "MUGAL MAJRA, Karnal, Haryana, India_google": {
+    "lat": 29.7402949,
+    "lon": 77.09961299999999,
+    "status": "success",
+    "matched_query": "MUGAL MAJRA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MUGAL MAJRA"
+  },
+  "MUNAK, Karnal, Haryana, India_google": {
+    "lat": 29.5202406,
+    "lon": 76.8475912,
+    "status": "success",
+    "matched_query": "MUNAK, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "MUNAK"
+  },
+  "NAGAL, Karnal, Haryana, India_google": {
+    "lat": 29.8281475,
+    "lon": 77.160611,
+    "status": "success",
+    "matched_query": "NAGAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NAGAL"
+  },
+  "NAGLA MEGA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "NAGLA MEGA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NAGLA MEGA"
+  },
+  "NALI KALAN, Karnal, Haryana, India_google": {
+    "lat": 29.7066438,
+    "lon": 77.097455,
+    "status": "success",
+    "matched_query": "NALI KALAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NALI KALAN"
+  },
+  "NALIPAR, Karnal, Haryana, India_google": {
+    "lat": 29.6820923,
+    "lon": 77.10105159999999,
+    "status": "success",
+    "matched_query": "NALIPAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NALIPAR"
+  },
+  "NALVIKHURD, Karnal, Haryana, India_google": {
+    "lat": 29.6941926,
+    "lon": 77.0938583,
+    "status": "success",
+    "matched_query": "NALVIKHURD, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NALVIKHURD"
+  },
+  "NANDI KHALSHA, Karnal, Haryana, India_google": {
+    "lat": 29.9188815,
+    "lon": 77.1226288,
+    "status": "success",
+    "matched_query": "NANDI KHALSHA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NANDI KHALSHA"
+  },
+  "NEW BASTI KNL, Karnal, Haryana, India_google": {
+    "lat": 28.7006738,
+    "lon": 76.9275744,
+    "status": "success",
+    "matched_query": "NEW BASTI KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NEW BASTI KNL"
+  },
+  "NEW SHAYM NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.3229086,
+    "lon": 76.30156420000002,
+    "status": "success",
+    "matched_query": "NEW SHAYM NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NEW SHAYM NAGAR"
+  },
+  "NEWAL, Karnal, Haryana, India_google": {
+    "lat": 29.732614,
+    "lon": 77.0506896,
+    "status": "success",
+    "matched_query": "NEWAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NEWAL"
+  },
+  "NIGDU, Karnal, Haryana, India_google": {
+    "lat": 29.8403836,
+    "lon": 76.736538,
+    "status": "success",
+    "matched_query": "NIGDU, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NIGDU"
+  },
+  "NIGHDU, Karnal, Haryana, India_google": {
+    "lat": 29.8403836,
+    "lon": 76.736538,
+    "status": "success",
+    "matched_query": "NIGHDU, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NIGHDU"
+  },
+  "NILOKHERI, Karnal, Haryana, India_google": {
+    "lat": 29.8398938,
+    "lon": 76.9317422,
+    "status": "success",
+    "matched_query": "NILOKHERI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NILOKHERI"
+  },
+  "NILOKHERI RICE MILL, Karnal, Haryana, India_google": {
+    "lat": 29.8300558,
+    "lon": 76.92688749999999,
+    "status": "success",
+    "matched_query": "NILOKHERI RICE MILL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NILOKHERI RICE MILL"
+  },
+  "NISING, Karnal, Haryana, India_google": {
+    "lat": 29.6923819,
+    "lon": 76.7625073,
+    "status": "success",
+    "matched_query": "NISING, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NISING"
+  },
+  "NISSING, Karnal, Haryana, India_google": {
+    "lat": 29.6923819,
+    "lon": 76.7625073,
+    "status": "success",
+    "matched_query": "NISSING, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "NISSING"
+  },
+  "OLD ANAJ MANDI KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.830957,
+    "lon": 76.9261176,
+    "status": "success",
+    "matched_query": "OLD ANAJ MANDI KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "OLD ANAJ MANDI KARNAL"
+  },
+  "PADHNA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "PADHNA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PADHNA"
+  },
+  "PADWALA, Karnal, Haryana, India_google": {
+    "lat": 29.7943046,
+    "lon": 76.8497536,
+    "status": "success",
+    "matched_query": "PADWALA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PADWALA"
+  },
+  "PAL COLONY INDRI, Karnal, Haryana, India_google": {
+    "lat": 29.8890681,
+    "lon": 77.04644689999999,
+    "status": "success",
+    "matched_query": "PAL COLONY INDRI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PAL COLONY INDRI"
+  },
+  "PALWAL DEPO ROADWAYS, Karnal, Haryana, India_google": {
+    "lat": 28.1472852,
+    "lon": 77.3259878,
+    "status": "success",
+    "matched_query": "PALWAL DEPO ROADWAYS, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PALWAL DEPO ROADWAYS"
+  },
+  "PANIPAT, Karnal, Haryana, India_google": {
+    "lat": 29.3909464,
+    "lon": 76.9635023,
+    "status": "success",
+    "matched_query": "PANIPAT, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PANIPAT"
+  },
+  "PAYONTA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "PAYONTA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PAYONTA"
+  },
+  "PDANA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "PDANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PDANA"
+  },
+  "PICHOLIYA, Karnal, Haryana, India_google": {
+    "lat": 29.5988469,
+    "lon": 76.8648893,
+    "status": "success",
+    "matched_query": "PICHOLIYA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PICHOLIYA"
+  },
+  "POLICE LINE KNL, Karnal, Haryana, India_google": {
+    "lat": 29.3188616,
+    "lon": 76.9938274,
+    "status": "success",
+    "matched_query": "POLICE LINE KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "POLICE LINE KNL"
+  },
+  "PPT, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "PPT, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PPT"
+  },
+  "PRITHVI VIHAR, Karnal, Haryana, India_google": {
+    "lat": 29.6634948,
+    "lon": 77.0205977,
+    "status": "success",
+    "matched_query": "PRITHVI VIHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PRITHVI VIHAR"
+  },
+  "PUNJAB, Karnal, Haryana, India_google": {
+    "lat": 29.7087898,
+    "lon": 77.0084755,
+    "status": "success",
+    "matched_query": "PUNJAB, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "PUNJAB"
+  },
+  "R/O 970 SEC 6 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6774028,
+    "lon": 77.0092631,
+    "status": "success",
+    "matched_query": "R/O 970 SEC 6 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "R/O 970 SEC 6 KARNAL"
+  },
+  "RADHANA DISTT JIND, Karnal, Haryana, India_google": {
+    "lat": 29.2817785,
+    "lon": 76.37964529999999,
+    "status": "success",
+    "matched_query": "RADHANA DISTT JIND, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RADHANA DISTT JIND"
+  },
+  "RAHDA, Karnal, Haryana, India_google": {
+    "lat": 29.6034384,
+    "lon": 76.5733862,
+    "status": "success",
+    "matched_query": "RAHDA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAHDA"
+  },
+  "RAHRA ASSANDH, Karnal, Haryana, India_google": {
+    "lat": 29.6034384,
+    "lon": 76.5733862,
+    "status": "success",
+    "matched_query": "RAHRA ASSANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAHRA ASSANDH"
+  },
+  "RAIPUR RORAN, Karnal, Haryana, India_google": {
+    "lat": 29.8740184,
+    "lon": 76.9218116,
+    "status": "success",
+    "matched_query": "RAIPUR RORAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAIPUR RORAN"
+  },
+  "RAJIV PURAM, Karnal, Haryana, India_google": {
+    "lat": 29.680317,
+    "lon": 77.018303,
+    "status": "success",
+    "matched_query": "RAJIV PURAM, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAJIV PURAM"
+  },
+  "RAM NAGAR, Karnal, Haryana, India_google": {
+    "lat": 29.6972461,
+    "lon": 76.9650386,
+    "status": "success",
+    "matched_query": "RAM NAGAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAM NAGAR"
+  },
+  "RAMBA, Karnal, Haryana, India_google": {
+    "lat": 29.7935174,
+    "lon": 76.9837477,
+    "status": "success",
+    "matched_query": "RAMBA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RAMBA"
+  },
+  "RANGRUTI KHERA ASSANDH, Karnal, Haryana, India_google": {
+    "lat": 29.5646174,
+    "lon": 76.631885,
+    "status": "success",
+    "matched_query": "RANGRUTI KHERA ASSANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RANGRUTI KHERA ASSANDH"
+  },
+  "RINDHAL, Karnal, Haryana, India_google": {
+    "lat": 29.7938504,
+    "lon": 77.0729954,
+    "status": "success",
+    "matched_query": "RINDHAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RINDHAL"
+  },
+  "RITOLI, Karnal, Haryana, India_google": {
+    "lat": 29.4130008,
+    "lon": 76.5108648,
+    "status": "success",
+    "matched_query": "RITOLI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RITOLI"
+  },
+  "RK PURAM KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.7131454,
+    "lon": 77.01807219999999,
+    "status": "success",
+    "matched_query": "RK PURAM KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RK PURAM KARNAL"
+  },
+  "RMANA RAMANI, Karnal, Haryana, India_google": {
+    "lat": 29.7992853,
+    "lon": 76.8216396,
+    "status": "success",
+    "matched_query": "RMANA RAMANI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "RMANA RAMANI"
+  },
+  "SADAR BAZAR KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6896071,
+    "lon": 76.97892089999999,
+    "status": "success",
+    "matched_query": "SADAR BAZAR KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SADAR BAZAR KARNAL"
+  },
+  "SAGOI, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "SAGOI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SAGOI"
+  },
+  "SAHNPUR, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "SAHNPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SAHNPUR"
+  },
+  "SALARPUR ROAD, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "SALARPUR ROAD, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SALARPUR ROAD"
+  },
+  "SALWAN, Karnal, Haryana, India_google": {
+    "lat": 29.5027953,
+    "lon": 76.71696089999999,
+    "status": "success",
+    "matched_query": "SALWAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SALWAN"
+  },
+  "SALWAN ASSANDH, Karnal, Haryana, India_google": {
+    "lat": 29.5027953,
+    "lon": 76.71696089999999,
+    "status": "success",
+    "matched_query": "SALWAN ASSANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SALWAN ASSANDH"
+  },
+  "SAMBLI, Karnal, Haryana, India_google": {
+    "lat": 29.7628454,
+    "lon": 76.7985669,
+    "status": "success",
+    "matched_query": "SAMBLI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SAMBLI"
+  },
+  "SANTRI, Karnal, Haryana, India_google": {
+    "lat": 29.9084899,
+    "lon": 77.0607637,
+    "status": "success",
+    "matched_query": "SANTRI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SANTRI"
+  },
+  "SEC 13, Karnal, Haryana, India_google": {
+    "lat": 29.6881898,
+    "lon": 76.99731609999999,
+    "status": "success",
+    "matched_query": "SEC 13, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC 13"
+  },
+  "SEC 3, Karnal, Haryana, India_google": {
+    "lat": 29.6668452,
+    "lon": 76.984132,
+    "status": "success",
+    "matched_query": "SEC 3, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC 3"
+  },
+  "SEC 7, Karnal, Haryana, India_google": {
+    "lat": 29.6872185,
+    "lon": 77.00893169999999,
+    "status": "success",
+    "matched_query": "SEC 7, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC 7"
+  },
+  "SEC 8, Karnal, Haryana, India_google": {
+    "lat": 29.696038,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "SEC 8, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC 8"
+  },
+  "SEC 9, Karnal, Haryana, India_google": {
+    "lat": 29.7074203,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "SEC 9, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC 9"
+  },
+  "SEC-18 PANIPAT, Karnal, Haryana, India_google": {
+    "lat": 29.4362833,
+    "lon": 76.9772675,
+    "status": "success",
+    "matched_query": "SEC-18 PANIPAT, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEC-18 PANIPAT"
+  },
+  "SECTOR 32 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.70006789999999,
+    "lon": 77.020293,
+    "status": "success",
+    "matched_query": "SECTOR 32 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SECTOR 32 KARNAL"
+  },
+  "SECTOR 6 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6758311,
+    "lon": 77.0089452,
+    "status": "success",
+    "matched_query": "SECTOR 6 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SECTOR 6 KARNAL"
+  },
+  "SECTOR 7 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6872185,
+    "lon": 77.00893169999999,
+    "status": "success",
+    "matched_query": "SECTOR 7 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SECTOR 7 KARNAL"
+  },
+  "SECTOR 9 KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.7074203,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "SECTOR 9 KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SECTOR 9 KARNAL"
+  },
+  "SEKHPURA, Karnal, Haryana, India_google": {
+    "lat": 29.8723609,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "SEKHPURA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SEKHPURA"
+  },
+  "SHAMGAD, Karnal, Haryana, India_google": {
+    "lat": 29.7730868,
+    "lon": 76.9571046,
+    "status": "success",
+    "matched_query": "SHAMGAD, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SHAMGAD"
+  },
+  "SHAPUR, Karnal, Haryana, India_google": {
+    "lat": 29.69337299999999,
+    "lon": 76.8994781,
+    "status": "success",
+    "matched_query": "SHAPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SHAPUR"
+  },
+  "SHIV COLONY, Karnal, Haryana, India_google": {
+    "lat": 29.6810665,
+    "lon": 76.96142549999999,
+    "status": "success",
+    "matched_query": "SHIV COLONY, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SHIV COLONY"
+  },
+  "SIDPUR, Karnal, Haryana, India_google": {
+    "lat": 29.7045339,
+    "lon": 76.954224,
+    "status": "success",
+    "matched_query": "SIDPUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SIDPUR"
+  },
+  "SIKRI, Karnal, Haryana, India_google": {
+    "lat": 29.863816,
+    "lon": 76.9907995,
+    "status": "success",
+    "matched_query": "SIKRI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SIKRI"
+  },
+  "SIRSI, Karnal, Haryana, India_google": {
+    "lat": 29.6816218,
+    "lon": 76.88867019999999,
+    "status": "success",
+    "matched_query": "SIRSI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SIRSI"
+  },
+  "SUBAHS COLONY, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "SUBAHS COLONY, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SUBAHS COLONY"
+  },
+  "SYAMGHAR, Karnal, Haryana, India_google": {
+    "lat": 29.7730868,
+    "lon": 76.9571046,
+    "status": "success",
+    "matched_query": "SYAMGHAR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "SYAMGHAR"
+  },
+  "TAPRANA, Karnal, Haryana, India_google": {
+    "lat": 29.7380093,
+    "lon": 77.0190228,
+    "status": "success",
+    "matched_query": "TAPRANA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TAPRANA"
+  },
+  "taraori Haryana 132116, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "taraori Haryana 132116, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "taraori Haryana 132116"
+  },
+  "TEELU SINGH COLONY, Karnal, Haryana, India_google": {
+    "lat": 29.6960534,
+    "lon": 77.0104276,
+    "status": "success",
+    "matched_query": "TEELU SINGH COLONY, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TEELU SINGH COLONY"
+  },
+  "TEHSIL NISSING DISTIC KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6923819,
+    "lon": 76.7625073,
+    "status": "success",
+    "matched_query": "TEHSIL NISSING DISTIC KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TEHSIL NISSING DISTIC KARNAL"
+  },
+  "THAKHNA, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "THAKHNA, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "THAKHNA"
+  },
+  "TRAVDI, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "TRAVDI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TRAVDI"
+  },
+  "TWR, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "TWR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "TWR"
+  },
+  "UCHANI KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.7322253,
+    "lon": 76.98230769999999,
+    "status": "success",
+    "matched_query": "UCHANI KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "UCHANI KARNAL"
+  },
+  "UHBVN ASSANDH KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "UHBVN ASSANDH KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "UHBVN ASSANDH KARNAL"
+  },
+  "VIKAS COLONY KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6664234,
+    "lon": 77.0064921,
+    "status": "success",
+    "matched_query": "VIKAS COLONY KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "VIKAS COLONY KARNAL"
+  },
+  "VIKASH NAGAR KARNAL, Karnal, Haryana, India_google": {
+    "lat": 29.6769736,
+    "lon": 77.0204624,
+    "status": "success",
+    "matched_query": "VIKASH NAGAR KARNAL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "VIKASH NAGAR KARNAL"
+  },
+  "VPO BALGARGHAN, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "VPO BALGARGHAN, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "VPO BALGARGHAN"
+  },
+  "VPO DADU PUR, Karnal, Haryana, India_google": {
+    "lat": 29.6707011,
+    "lon": 76.8936942,
+    "status": "success",
+    "matched_query": "VPO DADU PUR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "VPO DADU PUR"
+  },
+  "W N0 2 INDRI, Karnal, Haryana, India_google": {
+    "lat": 29.8778869,
+    "lon": 77.0450437,
+    "status": "success",
+    "matched_query": "W N0 2 INDRI, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "W N0 2 INDRI"
+  },
+  "15 ASSANDH, Karnal, Haryana, India_google": {
+    "lat": 29.5226333,
+    "lon": 76.6054292,
+    "status": "success",
+    "matched_query": "15 ASSANDH, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "15 ASSANDH"
+  },
+  "No 11 Gudha Indri Karnal, Karnal, Haryana, India_google": {
+    "lat": 29.8766944,
+    "lon": 77.0503611,
+    "status": "success",
+    "matched_query": "No 11 Gudha Indri Karnal, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "No 11 Gudha Indri Karnal"
+  },
+  "YNR, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "YNR, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "YNR"
+  },
+  "bhani khurd karnal, Karnal, Haryana, India_google": {
+    "lat": 29.7443593,
+    "lon": 76.954224,
+    "status": "success",
+    "matched_query": "bhani khurd karnal, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "bhani khurd karnal"
+  },
+  "jundla, Karnal, Haryana, India_google": {
+    "lat": 29.6509413,
+    "lon": 76.8735374,
+    "status": "success",
+    "matched_query": "jundla, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "jundla"
+  },
+  "kalan Haryana 126112, Karnal, Haryana, India_google": {
+    "lat": 29.4102094,
+    "lon": 76.6181655,
+    "status": "success",
+    "matched_query": "kalan Haryana 126112, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "kalan Haryana 126112"
+  },
+  "kurlan, Karnal, Haryana, India_google": {
+    "lat": 29.5524976,
+    "lon": 76.7437522,
+    "status": "success",
+    "matched_query": "kurlan, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "kurlan"
+  },
+  "mahabir dal karnal, Karnal, Haryana, India_google": {
+    "lat": 29.6886187,
+    "lon": 76.9910872,
+    "status": "success",
+    "matched_query": "mahabir dal karnal, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "mahabir dal karnal"
+  },
+  "old anaj mandi gaushala road, Karnal, Haryana, India_google": {
+    "lat": 29.6828855,
+    "lon": 76.9834015,
+    "status": "success",
+    "matched_query": "old anaj mandi gaushala road, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "old anaj mandi gaushala road"
+  },
+  "sec 4 Housing board karnal, Karnal, Haryana, India_google": {
+    "lat": 29.6777881,
+    "lon": 77.0114071,
+    "status": "success",
+    "matched_query": "sec 4 Housing board karnal, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "sec 4 Housing board karnal"
+  },
+  "4 garua Deogana, Karnal, Haryana, India_google": {
+    "lat": 29.6509347,
+    "lon": 76.8757468,
+    "status": "success",
+    "matched_query": "4 garua Deogana, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "4 garua Deogana"
+  },
+  "अग्रवाल महोल्ला, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अग्रवाल महोल्ला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अग्रवाल महोल्ला"
+  },
+  "अन्शल सिटी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अन्शल सिटी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अन्शल सिटी"
+  },
+  "अमृतपुर कला, Karnal, Haryana, India_google": {
+    "lat": 29.6863071,
+    "lon": 76.9902582,
+    "status": "success",
+    "matched_query": "अमृतपुर कला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अमृतपुर कला"
+  },
+  "अमृतपुर कलां, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अमृतपुर कलां, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अमृतपुर कलां"
+  },
+  "अमृतपुर खुर्द, Karnal, Haryana, India_google": {
+    "lat": 29.5371324,
+    "lon": 76.5163061,
+    "status": "success",
+    "matched_query": "अमृतपुर खुर्द, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अमृतपुर खुर्द"
+  },
+  "अराईपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अराईपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अराईपुरा"
+  },
+  "अशोक कालोनी वार्ड न016, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अशोक कालोनी वार्ड न016, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अशोक कालोनी वार्ड न016"
+  },
+  "अशोक नगर गली नं0 2 करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "अशोक नगर गली नं0 2 करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अशोक नगर गली नं0 2 करनाल"
+  },
+  "अशोका कालोनी घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.5886729,
+    "lon": 76.9801722,
+    "status": "success",
+    "matched_query": "अशोका कालोनी घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "अशोका कालोनी घरौंडा"
+  },
+  "असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "असंध"
+  },
+  "आन्नद विहार, Karnal, Haryana, India_google": {
+    "lat": 29.7153751,
+    "lon": 77.0060657,
+    "status": "success",
+    "matched_query": "आन्नद विहार, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "आन्नद विहार"
+  },
+  "आलन जोगी असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "आलन जोगी असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "आलन जोगी असंध"
+  },
+  "इस्लामनगर, Karnal, Haryana, India_google": {
+    "lat": 29.8717314,
+    "lon": 77.1165157,
+    "status": "success",
+    "matched_query": "इस्लामनगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "इस्लामनगर"
+  },
+  "ईस्लामनगर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "ईस्लामनगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ईस्लामनगर"
+  },
+  "उपली, Karnal, Haryana, India_google": {
+    "lat": 29.5660524,
+    "lon": 76.94990279999999,
+    "status": "success",
+    "matched_query": "उपली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "उपली"
+  },
+  "कम्बोपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.6354717,
+    "lon": 76.98230769999999,
+    "status": "success",
+    "matched_query": "कम्बोपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कम्बोपुरा"
+  },
+  "करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "करनाल"
+  },
+  "कर्ण गेट करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6934525,
+    "lon": 76.9912956,
+    "status": "success",
+    "matched_query": "कर्ण गेट करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कर्ण गेट करनाल"
+  },
+  "कारसा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "कारसा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कारसा"
+  },
+  "कुंजपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.7168223,
+    "lon": 77.0780316,
+    "status": "success",
+    "matched_query": "कुंजपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कुंजपुरा"
+  },
+  "कुटेल करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.7017744,
+    "lon": 77.0150316,
+    "status": "success",
+    "matched_query": "कुटेल करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कुटेल करनाल"
+  },
+  "कैमला, Karnal, Haryana, India_google": {
+    "lat": 29.5085284,
+    "lon": 77.0017465,
+    "status": "success",
+    "matched_query": "कैमला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कैमला"
+  },
+  "कोयर, Karnal, Haryana, India_google": {
+    "lat": 29.806899,
+    "lon": 76.740208,
+    "status": "success",
+    "matched_query": "कोयर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कोयर"
+  },
+  "कोहण्ड, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "कोहण्ड, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कोहण्ड"
+  },
+  "कौलखेड़ा असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "कौलखेड़ा असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "कौलखेड़ा असंध"
+  },
+  "खरकाली, Karnal, Haryana, India_google": {
+    "lat": 30.0437513,
+    "lon": 77.0891825,
+    "status": "success",
+    "matched_query": "खरकाली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "खरकाली"
+  },
+  "खिजराबाद असध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "खिजराबाद असध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "खिजराबाद असध"
+  },
+  "खेड़ी सरफली असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "खेड़ी सरफली असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "खेड़ी सरफली असंध"
+  },
+  "खेडी मान सिहँ, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "खेडी मान सिहँ, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "खेडी मान सिहँ"
+  },
+  "गढपुर खालसा, Karnal, Haryana, India_google": {
+    "lat": 29.8509408,
+    "lon": 77.0967357,
+    "status": "success",
+    "matched_query": "गढपुर खालसा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गढपुर खालसा"
+  },
+  "गढी जाटान, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गढी जाटान, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गढी जाटान"
+  },
+  "गढी भरल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गढी भरल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गढी भरल"
+  },
+  "गढीभरल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गढीभरल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गढीभरल"
+  },
+  "गली न0 03 फ्रुट मार्किट घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.5397333,
+    "lon": 76.9731017,
+    "status": "success",
+    "matched_query": "गली न0 03 फ्रुट मार्किट घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गली न0 03 फ्रुट मार्किट घरौंडा"
+  },
+  "गली न0 15 शाम नगर करनाल गली न0 15 शाम नगर करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6738291,
+    "lon": 76.9887876,
+    "status": "success",
+    "matched_query": "गली न0 15 शाम नगर करनाल गली न0 15 शाम नगर करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गली न0 15 शाम नगर करनाल गली न0 15 शाम नगर करनाल"
+  },
+  "गाँव दुपेडी करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.5095611,
+    "lon": 76.65715399999999,
+    "status": "success",
+    "matched_query": "गाँव दुपेडी करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गाँव दुपेडी करनाल"
+  },
+  "गाँव सालवन करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गाँव सालवन करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गाँव सालवन करनाल"
+  },
+  "गांगर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गांगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गांगर"
+  },
+  "सालवन करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सालवन करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सालवन करनाल"
+  },
+  "खेड़ी शर्फअली असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "खेड़ी शर्फअली असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "खेड़ी शर्फअली असंध"
+  },
+  "बिगाना जीन्द, Karnal, Haryana, India_google": {
+    "lat": 29.325508,
+    "lon": 76.29979089999999,
+    "status": "success",
+    "matched_query": "बिगाना जीन्द, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बिगाना जीन्द"
+  },
+  "गावँ राहड़ा असंध, Karnal, Haryana, India_google": {
+    "lat": 29.601645,
+    "lon": 76.570115,
+    "status": "success",
+    "matched_query": "गावँ राहड़ा असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गावँ राहड़ा असंध"
+  },
+  "गावँ रिटोली जीदं, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गावँ रिटोली जीदं, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गावँ रिटोली जीदं"
+  },
+  "गुढा ईन्द्री, Karnal, Haryana, India_google": {
+    "lat": 29.4990199,
+    "lon": 76.9516781,
+    "status": "success",
+    "matched_query": "गुढा ईन्द्री, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुढा ईन्द्री"
+  },
+  "गुमटो, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गुमटो, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुमटो"
+  },
+  "गुरुनानक पुरा करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6864336,
+    "lon": 76.94473959999999,
+    "status": "success",
+    "matched_query": "गुरुनानक पुरा करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुरुनानक पुरा करनाल"
+  },
+  "गुरुनानक पुरा कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.3961205,
+    "lon": 76.9495427,
+    "status": "success",
+    "matched_query": "गुरुनानक पुरा कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुरुनानक पुरा कालोनी"
+  },
+  "गुरुनानकपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "गुरुनानकपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुरुनानकपुरा"
+  },
+  "गुलाब कॉलोनी तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7979879,
+    "lon": 76.927567,
+    "status": "success",
+    "matched_query": "गुलाब कॉलोनी तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गुलाब कॉलोनी तरावडी"
+  },
+  "गोपी नाथ मन्दिर मीरा घाटी KNL, Karnal, Haryana, India_google": {
+    "lat": 29.7621854,
+    "lon": 76.5546322,
+    "status": "success",
+    "matched_query": "गोपी नाथ मन्दिर मीरा घाटी KNL, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "गोपी नाथ मन्दिर मीरा घाटी KNL"
+  },
+  "घऱौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.5397333,
+    "lon": 76.9731017,
+    "status": "success",
+    "matched_query": "घऱौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "घऱौंडा"
+  },
+  "घीड, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "घीड, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "घीड"
+  },
+  "घोगडीपुर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "घोगडीपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "घोगडीपुर"
+  },
+  "चन्दनखेडा तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "चन्दनखेडा तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चन्दनखेडा तरावडी"
+  },
+  "चमारखेडा बुडनपुर, Karnal, Haryana, India_google": {
+    "lat": 29.7294016,
+    "lon": 76.9326167,
+    "status": "success",
+    "matched_query": "चमारखेडा बुडनपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चमारखेडा बुडनपुर"
+  },
+  "चांद सराये धोबी घाट करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "चांद सराये धोबी घाट करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चांद सराये धोबी घाट करनाल"
+  },
+  "चांद सराये मंगल कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "चांद सराये मंगल कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चांद सराये मंगल कालोनी"
+  },
+  "चांदसमद, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "चांदसमद, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चांदसमद"
+  },
+  "चोचड़ा असध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "चोचड़ा असध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चोचड़ा असध"
+  },
+  "चोरकारसा, Karnal, Haryana, India_google": {
+    "lat": 29.6277207,
+    "lon": 76.6728454,
+    "status": "success",
+    "matched_query": "चोरकारसा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चोरकारसा"
+  },
+  "चोरपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.8068763,
+    "lon": 77.1172679,
+    "status": "success",
+    "matched_query": "चोरपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "चोरपुरा"
+  },
+  "छपरियों, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "छपरियों, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "छपरियों"
+  },
+  "जटपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.7587896,
+    "lon": 76.8994781,
+    "status": "success",
+    "matched_query": "जटपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जटपुरा"
+  },
+  "जडौली, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "जडौली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जडौली"
+  },
+  "जनकपुरी, Karnal, Haryana, India_google": {
+    "lat": 29.6827826,
+    "lon": 76.97968569999999,
+    "status": "success",
+    "matched_query": "जनकपुरी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जनकपुरी"
+  },
+  "जभाला, Karnal, Haryana, India_google": {
+    "lat": 29.5506327,
+    "lon": 76.6622072,
+    "status": "success",
+    "matched_query": "जभाला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जभाला"
+  },
+  "जभाला असध, Karnal, Haryana, India_google": {
+    "lat": 29.5506327,
+    "lon": 76.6622072,
+    "status": "success",
+    "matched_query": "जभाला असध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जभाला असध"
+  },
+  "जलमाना, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "जलमाना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जलमाना"
+  },
+  "जुंडला गेट लाड़ो बगड़ी करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6509413,
+    "lon": 76.8735374,
+    "status": "success",
+    "matched_query": "जुंडला गेट लाड़ो बगड़ी करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जुंडला गेट लाड़ो बगड़ी करनाल"
+  },
+  "जैल सिंह कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "जैल सिंह कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जैल सिंह कालोनी"
+  },
+  "जैल सिंह कालोनी घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.5329386,
+    "lon": 76.9691217,
+    "status": "success",
+    "matched_query": "जैल सिंह कालोनी घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जैल सिंह कालोनी घरौंडा"
+  },
+  "जैल सिंह कालोनी वार्ड न 2, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "जैल सिंह कालोनी वार्ड न 2, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जैल सिंह कालोनी वार्ड न 2"
+  },
+  "जोगियो वाला महोल्ला, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "जोगियो वाला महोल्ला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जोगियो वाला महोल्ला"
+  },
+  "जोहड माजरा, Karnal, Haryana, India_google": {
+    "lat": 29.5245151,
+    "lon": 76.8462995,
+    "status": "success",
+    "matched_query": "जोहड माजरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "जोहड माजरा"
+  },
+  "झिंझाडी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "झिंझाडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "झिंझाडी"
+  },
+  "झिलमील ढाबा, Karnal, Haryana, India_google": {
+    "lat": 27.5851034,
+    "lon": 74.7746684,
+    "status": "success",
+    "matched_query": "झिलमील ढाबा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "झिलमील ढाबा"
+  },
+  "झीवरहेडी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "झीवरहेडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "झीवरहेडी"
+  },
+  "डेरा शेरु वाला असंध, Karnal, Haryana, India_google": {
+    "lat": 29.5201121,
+    "lon": 76.6141754,
+    "status": "success",
+    "matched_query": "डेरा शेरु वाला असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "डेरा शेरु वाला असंध"
+  },
+  "डेरा हलवाना, Karnal, Haryana, India_google": {
+    "lat": 29.8479302,
+    "lon": 77.16021719999999,
+    "status": "success",
+    "matched_query": "डेरा हलवाना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "डेरा हलवाना"
+  },
+  "तखाणा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "तखाणा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तखाणा"
+  },
+  "तरावङी, करनाल।, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "तरावङी, करनाल।, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "तरावङी, करनाल।"
+  },
+  "थल, Karnal, Haryana, India_google": {
+    "lat": 29.5234586,
+    "lon": 76.5285913,
+    "status": "success",
+    "matched_query": "थल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "थल"
+  },
+  "दनोली, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "दनोली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दनोली"
+  },
+  "दयालपुरा गेट करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6934525,
+    "lon": 76.9912956,
+    "status": "success",
+    "matched_query": "दयालपुरा गेट करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दयालपुरा गेट करनाल"
+  },
+  "दादुपुर खुर्द, Karnal, Haryana, India_google": {
+    "lat": 29.76635379999999,
+    "lon": 76.9734271,
+    "status": "success",
+    "matched_query": "दादुपुर खुर्द, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दादुपुर खुर्द"
+  },
+  "दिल्ली, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "दिल्ली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दिल्ली"
+  },
+  "दुर्गा कलोनी, Karnal, Haryana, India_google": {
+    "lat": 29.9701536,
+    "lon": 76.8234033,
+    "status": "success",
+    "matched_query": "दुर्गा कलोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "दुर्गा कलोनी"
+  },
+  "देवीपुर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "देवीपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "देवीपुर"
+  },
+  "धक्का बस्ती, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "धक्का बस्ती, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "धक्का बस्ती"
+  },
+  "नडाना कलोनी, Karnal, Haryana, India_google": {
+    "lat": 29.7706125,
+    "lon": 76.9024219,
+    "status": "success",
+    "matched_query": "नडाना कलोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नडाना कलोनी"
+  },
+  "नरुखेङी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "नरुखेङी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नरुखेङी"
+  },
+  "नरुखेडी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "नरुखेडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नरुखेडी"
+  },
+  "नौरता, Karnal, Haryana, India_google": {
+    "lat": 29.8477921,
+    "lon": 77.0362967,
+    "status": "success",
+    "matched_query": "नौरता, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "नौरता"
+  },
+  "न्यु शाम नगर करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6738291,
+    "lon": 76.9887876,
+    "status": "success",
+    "matched_query": "न्यु शाम नगर करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न्यु शाम नगर करनाल"
+  },
+  "पनौडी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "पनौडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पनौडी"
+  },
+  "पलेडी पानीपत, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "पलेडी पानीपत, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पलेडी पानीपत"
+  },
+  "पस्ताना, Karnal, Haryana, India_google": {
+    "lat": 29.8625388,
+    "lon": 76.73816579999999,
+    "status": "success",
+    "matched_query": "पस्ताना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पस्ताना"
+  },
+  "पहलवान कलोनी तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "पहलवान कलोनी तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "पहलवान कलोनी तरावडी"
+  },
+  "प्रेमनगर करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.690583,
+    "lon": 76.9639128,
+    "status": "success",
+    "matched_query": "प्रेमनगर करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "प्रेमनगर करनाल"
+  },
+  "फुट्टी तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7999607,
+    "lon": 76.9334186,
+    "status": "success",
+    "matched_query": "फुट्टी तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "फुट्टी तरावडी"
+  },
+  "फुसगढ, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "फुसगढ, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "फुसगढ"
+  },
+  "बकरवाला युमनानगर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "बकरवाला युमनानगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बकरवाला युमनानगर"
+  },
+  "बजीदा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "बजीदा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बजीदा"
+  },
+  "बजीदा जाटान, Karnal, Haryana, India_google": {
+    "lat": 29.6389674,
+    "lon": 76.960234,
+    "status": "success",
+    "matched_query": "बजीदा जाटान, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बजीदा जाटान"
+  },
+  "बरसत, Karnal, Haryana, India_google": {
+    "lat": 29.5032464,
+    "lon": 77.04925039999999,
+    "status": "success",
+    "matched_query": "बरसत, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बरसत"
+  },
+  "बसत विहार गली न0 16 करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.7153751,
+    "lon": 77.0060657,
+    "status": "success",
+    "matched_query": "बसत विहार गली न0 16 करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बसत विहार गली न0 16 करनाल"
+  },
+  "बसताडा, Karnal, Haryana, India_google": {
+    "lat": 29.5685189,
+    "lon": 76.98821029999999,
+    "status": "success",
+    "matched_query": "बसताडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बसताडा"
+  },
+  "बांसो गेट मटक माजरी, Karnal, Haryana, India_google": {
+    "lat": 29.67970469999999,
+    "lon": 76.986288,
+    "status": "success",
+    "matched_query": "बांसो गेट मटक माजरी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बांसो गेट मटक माजरी"
+  },
+  "बीजना, Karnal, Haryana, India_google": {
+    "lat": 29.5989958,
+    "lon": 76.9304557,
+    "status": "success",
+    "matched_query": "बीजना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बीजना"
+  },
+  "बीर नरैना करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "बीर नरैना करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बीर नरैना करनाल"
+  },
+  "बुडनपुर चमारखेडा, Karnal, Haryana, India_google": {
+    "lat": 29.7294016,
+    "lon": 76.9326167,
+    "status": "success",
+    "matched_query": "बुडनपुर चमारखेडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बुडनपुर चमारखेडा"
+  },
+  "बुढनपुर बागरं, Karnal, Haryana, India_google": {
+    "lat": 29.802892,
+    "lon": 77.274085,
+    "status": "success",
+    "matched_query": "बुढनपुर बागरं, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बुढनपुर बागरं"
+  },
+  "बोहला खालसा, Karnal, Haryana, India_google": {
+    "lat": 29.0708865,
+    "lon": 76.84614959999999,
+    "status": "success",
+    "matched_query": "बोहला खालसा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "बोहला खालसा"
+  },
+  "ब्याना, Karnal, Haryana, India_google": {
+    "lat": 29.8392014,
+    "lon": 77.11678599999999,
+    "status": "success",
+    "matched_query": "ब्याना, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ब्याना"
+  },
+  "ब्रहमनगर हांसी रोड, Karnal, Haryana, India_google": {
+    "lat": 29.6718639,
+    "lon": 76.9984722,
+    "status": "success",
+    "matched_query": "ब्रहमनगर हांसी रोड, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "ब्रहमनगर हांसी रोड"
+  },
+  "भादसौ, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "भादसौ, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भादसौ"
+  },
+  "भाव नगर गुजरात हाल घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.5397333,
+    "lon": 76.9731017,
+    "status": "success",
+    "matched_query": "भाव नगर गुजरात हाल घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भाव नगर गुजरात हाल घरौंडा"
+  },
+  "भीम नगर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "भीम नगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भीम नगर"
+  },
+  "भूसली, Karnal, Haryana, India_google": {
+    "lat": 29.6119368,
+    "lon": 76.95376019999999,
+    "status": "success",
+    "matched_query": "भूसली, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भूसली"
+  },
+  "भैनी खुर्द तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.7443593,
+    "lon": 76.954224,
+    "status": "success",
+    "matched_query": "भैनी खुर्द तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "भैनी खुर्द तरावडी"
+  },
+  "म0न019 डिफेंस कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "म0न019 डिफेंस कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "म0न019 डिफेंस कालोनी"
+  },
+  "मंगल कालोनी पार्ट-2, Karnal, Haryana, India_google": {
+    "lat": 29.6660188,
+    "lon": 76.9761473,
+    "status": "success",
+    "matched_query": "मंगल कालोनी पार्ट-2, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मंगल कालोनी पार्ट-2"
+  },
+  "मकान न0 937 चांद सराय जुण्डसा गेट, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "मकान न0 937 चांद सराय जुण्डसा गेट, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मकान न0 937 चांद सराय जुण्डसा गेट"
+  },
+  "मधुबन करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6144744,
+    "lon": 76.97870759999999,
+    "status": "success",
+    "matched_query": "मधुबन करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मधुबन करनाल"
+  },
+  "मलिकपुर, Karnal, Haryana, India_google": {
+    "lat": 29.5246108,
+    "lon": 76.9484624,
+    "status": "success",
+    "matched_query": "मलिकपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मलिकपुर"
+  },
+  "माण्डी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "माण्डी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "माण्डी"
+  },
+  "मान कालोनी करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "मान कालोनी करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मान कालोनी करनाल"
+  },
+  "मीनाप रोङ करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "मीनाप रोङ करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मीनाप रोङ करनाल"
+  },
+  "मुण्डोगढी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "मुण्डोगढी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "मुण्डोगढी"
+  },
+  "रामनगर, Karnal, Haryana, India_google": {
+    "lat": 29.3928258,
+    "lon": 76.9953063,
+    "status": "success",
+    "matched_query": "रामनगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "रामनगर"
+  },
+  "रायसन करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "रायसन करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "रायसन करनाल"
+  },
+  "राहड़ा, Karnal, Haryana, India_google": {
+    "lat": 29.601645,
+    "lon": 76.570115,
+    "status": "success",
+    "matched_query": "राहड़ा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "राहड़ा"
+  },
+  "लबकरी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "लबकरी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "लबकरी"
+  },
+  "लालुपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.5496572,
+    "lon": 77.01556630000002,
+    "status": "success",
+    "matched_query": "लालुपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "लालुपुरा"
+  },
+  "वकिलपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "वकिलपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "वकिलपुरा"
+  },
+  "वजीदपुर, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "वजीदपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "वजीदपुर"
+  },
+  "8 असध, Karnal, Haryana, India_google": {
+    "lat": 29.5233226,
+    "lon": 76.61099039999999,
+    "status": "success",
+    "matched_query": "8 असध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "8 असध"
+  },
+  "न 06 इन्द्री, Karnal, Haryana, India_google": {
+    "lat": 29.8810239,
+    "lon": 77.05779989999999,
+    "status": "success",
+    "matched_query": "न 06 इन्द्री, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न 06 इन्द्री"
+  },
+  "न 2 जैल सिंह कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "न 2 जैल सिंह कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न 2 जैल सिंह कालोनी"
+  },
+  "न0 02 जैल सिंह कालोनी घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.53647759999999,
+    "lon": 76.97237609999999,
+    "status": "success",
+    "matched_query": "न0 02 जैल सिंह कालोनी घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 02 जैल सिंह कालोनी घरौंडा"
+  },
+  "न0 14 तरावडी, Karnal, Haryana, India_google": {
+    "lat": 29.801305,
+    "lon": 76.9400749,
+    "status": "success",
+    "matched_query": "न0 14 तरावडी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न0 14 तरावडी"
+  },
+  "न010 बहादुर अली महोल्ला, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "न010 बहादुर अली महोल्ला, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "न010 बहादुर अली महोल्ला"
+  },
+  "विकास कालोनी घरौंडा, Karnal, Haryana, India_google": {
+    "lat": 29.54048599999999,
+    "lon": 76.96921329999999,
+    "status": "success",
+    "matched_query": "विकास कालोनी घरौंडा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "विकास कालोनी घरौंडा"
+  },
+  "शांती नगर, Karnal, Haryana, India_google": {
+    "lat": 29.6962177,
+    "lon": 76.9599068,
+    "status": "success",
+    "matched_query": "शांती नगर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शांती नगर"
+  },
+  "शिव कालोनी, Karnal, Haryana, India_google": {
+    "lat": 29.6879818,
+    "lon": 76.9659038,
+    "status": "success",
+    "matched_query": "शिव कालोनी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शिव कालोनी"
+  },
+  "शिव कालोनी गली नं 1, Karnal, Haryana, India_google": {
+    "lat": 29.6879818,
+    "lon": 76.9659038,
+    "status": "success",
+    "matched_query": "शिव कालोनी गली नं 1, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शिव कालोनी गली नं 1"
+  },
+  "शेखपुरा, Karnal, Haryana, India_google": {
+    "lat": 29.8723609,
+    "lon": 77.01182460000001,
+    "status": "success",
+    "matched_query": "शेखपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शेखपुरा"
+  },
+  "शेखुपुरा, Karnal, Haryana, India_google": {
+    "lat": 30.2720306,
+    "lon": 77.2491365,
+    "status": "success",
+    "matched_query": "शेखुपुरा, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "शेखुपुरा"
+  },
+  "संजय नगर घरौंडा करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.67920629999999,
+    "lon": 76.9683393,
+    "status": "success",
+    "matched_query": "संजय नगर घरौंडा करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "संजय नगर घरौंडा करनाल"
+  },
+  "संजय नगर बरसत, Karnal, Haryana, India_google": {
+    "lat": 29.5076206,
+    "lon": 77.0692286,
+    "status": "success",
+    "matched_query": "संजय नगर बरसत, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "संजय नगर बरसत"
+  },
+  "सदर बाजार निक्का स्कूल, Karnal, Haryana, India_google": {
+    "lat": 29.6894047,
+    "lon": 76.98086769999999,
+    "status": "success",
+    "matched_query": "सदर बाजार निक्का स्कूल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सदर बाजार निक्का स्कूल"
+  },
+  "सदरपुर, Karnal, Haryana, India_google": {
+    "lat": 29.5640669,
+    "lon": 77.0737149,
+    "status": "success",
+    "matched_query": "सदरपुर, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सदरपुर"
+  },
+  "सफीदो रोड़ असंध, Karnal, Haryana, India_google": {
+    "lat": 29.4060653,
+    "lon": 76.66148530000001,
+    "status": "success",
+    "matched_query": "सफीदो रोड़ असंध, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सफीदो रोड़ असंध"
+  },
+  "सालवन, Karnal, Haryana, India_google": {
+    "lat": 29.5027953,
+    "lon": 76.71696089999999,
+    "status": "success",
+    "matched_query": "सालवन, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सालवन"
+  },
+  "सी एज डी सिटी करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.7483396,
+    "lon": 76.9693939,
+    "status": "success",
+    "matched_query": "सी एज डी सिटी करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सी एज डी सिटी करनाल"
+  },
+  "सुबरी, Karnal, Haryana, India_google": {
+    "lat": 29.5836303,
+    "lon": 77.1653334,
+    "status": "success",
+    "matched_query": "सुबरी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सुबरी"
+  },
+  "सै14 करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "सै14 करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सै14 करनाल"
+  },
+  "सैक्टर 13 करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6696017,
+    "lon": 77.0169617,
+    "status": "success",
+    "matched_query": "सैक्टर 13 करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "सैक्टर 13 करनाल"
+  },
+  "हांसी रोङ करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6906934,
+    "lon": 76.9938274,
+    "status": "success",
+    "matched_query": "हांसी रोङ करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "हांसी रोङ करनाल"
+  },
+  "हांसी रोड करनाल, Karnal, Haryana, India_google": {
+    "lat": 29.6718639,
+    "lon": 76.9984722,
+    "status": "success",
+    "matched_query": "हांसी रोड करनाल, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "हांसी रोड करनाल"
+  },
+  "हाउसिंग बोर्ड कार्यालय सै-4, Karnal, Haryana, India_google": {
+    "lat": 29.6883774,
+    "lon": 76.99497099999999,
+    "status": "success",
+    "matched_query": "हाउसिंग बोर्ड कार्यालय सै-4, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "हाउसिंग बोर्ड कार्यालय सै-4"
+  },
+  "हाल निवासी, Karnal, Haryana, India_google": {
+    "lat": 29.6856929,
+    "lon": 76.9904825,
+    "status": "success",
+    "matched_query": "हाल निवासी, Karnal, Haryana, India",
+    "matched_pass": "google_pass_1",
+    "cleaned_address": "हाल निवासी"
+  }
+}
